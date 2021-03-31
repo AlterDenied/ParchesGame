@@ -1,16 +1,23 @@
 class ActionScene extends Phaser.Scene {
     gameText;
-    constructor () {
-        super ('actionScene');
-    }
-    
-    preload () {
-
+    floorTile;
+    constructor() {
+        super('actionScene');
     }
 
-    create () {
-        this.gameText = this.add.text(50, 50, "Here is the game", {
-            fontSize: 25
-        });
+    preload() {
+        this.load.image('floorNameInPhaser', './assets/floor.png');
+        this.load.tilemapTiledJSON('mapFromTiled', './assets/floorMapFromTiled.json');
+    }
+
+    create() {
+        this.floorMap = this.make.tilemap({ key: 'mapFromTiled'});
+        this.tileset = this.floorMap.addTilesetImage('floor', 'floorNameInPhaser');
+
+        this.floorMap.createLayer('Ground', this.tileset);
+    }
+
+    update() {
+
     }
 }
