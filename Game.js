@@ -8,10 +8,11 @@ let config = {
     type: Phaser.AUTO,
     physics: {
         default: 'arcade',
-        debug: false,
+        debug: true,
         gravity: {y: 0}
     },
-    scene: [ActionScene]
+    scene: [ActionScene],
+    disableContextMenu: true
 };
 
 let game = new Phaser.Game(config);
