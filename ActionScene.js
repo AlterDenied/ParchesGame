@@ -50,7 +50,7 @@ class ActionScene extends Phaser.Scene {
         });
         this.diceThrow.setInteractive();
         this.diceThrow.on('pointerdown', () => {this.physics.add.sprite(250, 600, 'samurai', 'samuraiStanding08.png')});
-
+        
     }
 
     update(time, delta) {
@@ -67,7 +67,7 @@ class ActionScene extends Phaser.Scene {
         // else {
         //     this.samurai.setVelocityX(0);
         // }
-
+        this.samurai.clearTint();
         this.floorMapLayer.forEachTile((tile) => { tile.setAlpha(1) });
         this.worldPoint = this.input.activePointer.positionToCamera(this.cameras.main);
         this.pointerTileX = this.floorMap.worldToTileX(this.worldPoint.x);
@@ -76,11 +76,20 @@ class ActionScene extends Phaser.Scene {
         this.tile = this.floorMap.getTileAt(this.pointerTileX, this.pointerTileY);
         if (this.tile) {
             if (this.pointerTileX === this.tile.x && this.pointerTileY === this.tile.y) {
-                this.tile.setAlpha(0.5);
+                if(this.pointerTileX === Phaser.Math.FloorTo(this.samurai.x / 64) && this.pointerTileY === Phaser.Math.FloorTo(this.samurai.y / 64)) {
+
+                } else {
+                    this.tile.setAlpha(0.5);
+                }
+                
             }
         }
-
-
+            
+        
+            if (this.pointerTileX === Phaser.Math.FloorTo(this.samurai.x / 64) && this.pointerTileY === Phaser.Math.FloorTo(this.samurai.y / 64)) { 
+                this.samurai.setTint(0x11aa55);
+            }
+        
     }
 
     alphaFunction() {
