@@ -10,10 +10,13 @@ class StartScene extends Phaser.Scene {
     }
 
     create () {
-        this.titleName = this.add.text(400, 250, "Parches", {
+        this.screenWidth = this.game.config.width;
+        this.screenHeight = this.game.config.height;
+        console.log(this.game.config.width);
+        this.titleName = this.add.text(0, this.screenHeight / 4, "Parches", {
             fontSize: 48
         });
-        this.titleName.setX(400 - this.titleName.width /2);
+        this.titleName.setX(this.screenWidth / 2 - this.titleName.width); 
         this.startText = this.add.text(400, 550, "Click to start the game", {
             fontSize: 25
         });
