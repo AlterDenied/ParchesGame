@@ -1,5346 +1,33 @@
 {
 	"textures": [
 		{
-			"image": "samuraiAtlas.png",
+			"image": "samuraiNew.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 512,
-				"h": 1024
+				"w": 1024,
+				"h": 2048
 			},
 			"scale": 1,
 			"frames": [
-				{
-					"filename": "samuraiAttackRight08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 20,
-						"w": 64,
-						"h": 43
-					},
-					"frame": {
-						"x": 1,
-						"y": 1,
-						"w": 64,
-						"h": 43
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft02.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 67,
-						"y": 1,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft24.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 133,
-						"y": 1,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackRight01.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 199,
-						"y": 1,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft02.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 265,
-						"y": 1,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft03.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 331,
-						"y": 1,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft04.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 397,
-						"y": 1,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackRight19.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 48,
-						"h": 36
-					},
-					"frame": {
-						"x": 463,
-						"y": 1,
-						"w": 48,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft05.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 67,
-						"y": 36,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft06.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 1,
-						"y": 46,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft07.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 133,
-						"y": 36,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 199,
-						"y": 36,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft09.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 265,
-						"y": 36,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 331,
-						"y": 36,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft11.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 397,
-						"y": 36,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft19.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 16,
-						"y": 19,
-						"w": 48,
-						"h": 33
-					},
-					"frame": {
-						"x": 463,
-						"y": 39,
-						"w": 48,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft12.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 67,
-						"y": 71,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft13.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 1,
-						"y": 81,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 133,
-						"y": 71,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft15.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 199,
-						"y": 71,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft16.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 265,
-						"y": 71,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 331,
-						"y": 71,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 397,
-						"y": 71,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 16,
-						"y": 20,
-						"w": 48,
-						"h": 32
-					},
-					"frame": {
-						"x": 463,
-						"y": 74,
-						"w": 48,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft19.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 67,
-						"y": 106,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft20.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 1,
-						"y": 116,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft21.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 133,
-						"y": 106,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft22.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 199,
-						"y": 106,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft23.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 265,
-						"y": 106,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft24.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 64,
-						"h": 33
-					},
-					"frame": {
-						"x": 331,
-						"y": 106,
-						"w": 64,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft03.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 64,
-						"h": 32
-					},
-					"frame": {
-						"x": 397,
-						"y": 106,
-						"w": 64,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackRight18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 18,
-						"w": 47,
-						"h": 35
-					},
-					"frame": {
-						"x": 463,
-						"y": 108,
-						"w": 47,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackDown18.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 0,
-						"w": 19,
-						"h": 57
-					},
-					"frame": {
-						"x": 397,
-						"y": 140,
-						"w": 19,
-						"h": 57
-					}
-				},
-				{
-					"filename": "samuraiAttackDown17.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 2,
-						"w": 19,
-						"h": 55
-					},
-					"frame": {
-						"x": 456,
-						"y": 145,
-						"w": 19,
-						"h": 55
-					}
-				},
-				{
-					"filename": "samuraiAttackDown19.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 0,
-						"w": 19,
-						"h": 57
-					},
-					"frame": {
-						"x": 67,
-						"y": 141,
-						"w": 19,
-						"h": 57
-					}
-				},
-				{
-					"filename": "samuraiAttackDown20.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 0,
-						"w": 17,
-						"h": 54
-					},
-					"frame": {
-						"x": 1,
-						"y": 151,
-						"w": 17,
-						"h": 54
-					}
-				},
 				{
 					"filename": "samuraiDying48.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 64,
-						"h": 64
+						"w": 128,
+						"h": 128
 					},
 					"spriteSourceSize": {
-						"x": 28,
-						"y": 33,
-						"w": 6,
-						"h": 4
-					},
-					"frame": {
 						"x": 57,
-						"y": 151,
-						"w": 6,
-						"h": 4
-					}
-				},
-				{
-					"filename": "samuraiAttackUp07.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 0,
-						"w": 21,
-						"h": 53
-					},
-					"frame": {
-						"x": 126,
-						"y": 141,
-						"w": 21,
-						"h": 53
-					}
-				},
-				{
-					"filename": "samuraiAttackDown03.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 0,
-						"w": 15,
-						"h": 53
-					},
-					"frame": {
-						"x": 57,
-						"y": 162,
-						"w": 15,
-						"h": 53
-					}
-				},
-				{
-					"filename": "samuraiAttackDown04.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 0,
-						"w": 15,
-						"h": 53
+						"y": 66,
+						"w": 9,
+						"h": 6
 					},
 					"frame": {
 						"x": 1,
-						"y": 170,
-						"w": 15,
-						"h": 53
-					}
-				},
-				{
-					"filename": "samuraiDying01.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
 						"y": 1,
-						"w": 16,
-						"h": 52
-					},
-					"frame": {
-						"x": 181,
-						"y": 141,
-						"w": 16,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown01.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 16,
-						"h": 52
-					},
-					"frame": {
-						"x": 235,
-						"y": 141,
-						"w": 16,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown02.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 16,
-						"h": 52
-					},
-					"frame": {
-						"x": 289,
-						"y": 141,
-						"w": 16,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown23.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 16,
-						"h": 52
-					},
-					"frame": {
-						"x": 343,
-						"y": 141,
-						"w": 16,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown24.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 16,
-						"h": 52
-					},
-					"frame": {
-						"x": 181,
-						"y": 159,
-						"w": 16,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown03.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 52
-					},
-					"frame": {
-						"x": 112,
-						"y": 164,
-						"w": 15,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown22.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 52
-					},
-					"frame": {
-						"x": 56,
-						"y": 179,
-						"w": 15,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiAttackDown01.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 52
-					},
-					"frame": {
-						"x": 1,
-						"y": 187,
-						"w": 14,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiAttackDown02.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 14,
-						"h": 52
-					},
-					"frame": {
-						"x": 235,
-						"y": 159,
-						"w": 14,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiAttackDown24.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 52
-					},
-					"frame": {
-						"x": 289,
-						"y": 159,
-						"w": 14,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown10.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 52
-					},
-					"frame": {
-						"x": 343,
-						"y": 159,
-						"w": 14,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown11.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 52
-					},
-					"frame": {
-						"x": 397,
-						"y": 161,
-						"w": 14,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown12.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 52
-					},
-					"frame": {
-						"x": 451,
-						"y": 166,
-						"w": 14,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown13.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 52
-					},
-					"frame": {
-						"x": 235,
-						"y": 175,
-						"w": 14,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiWalkDown14.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 52
-					},
-					"frame": {
-						"x": 166,
-						"y": 177,
-						"w": 14,
-						"h": 52
-					}
-				},
-				{
-					"filename": "samuraiAttackDown05.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 0,
-						"w": 16,
-						"h": 51
-					},
-					"frame": {
-						"x": 110,
-						"y": 181,
-						"w": 16,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiStanding22.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 1,
-						"w": 16,
-						"h": 51
-					},
-					"frame": {
-						"x": 55,
-						"y": 196,
-						"w": 16,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiStanding23.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 1,
-						"w": 16,
-						"h": 51
-					},
-					"frame": {
-						"x": 1,
-						"y": 203,
-						"w": 16,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiStanding24.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 1,
-						"w": 15,
-						"h": 51
-					},
-					"frame": {
-						"x": 289,
-						"y": 175,
-						"w": 15,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiWalkDown04.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 51
-					},
-					"frame": {
-						"x": 342,
-						"y": 175,
-						"w": 15,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiWalkDown20.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 51
-					},
-					"frame": {
-						"x": 395,
-						"y": 177,
-						"w": 15,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiWalkDown21.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 51
-					},
-					"frame": {
-						"x": 448,
-						"y": 182,
-						"w": 15,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiAttackDown23.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 51
-					},
-					"frame": {
-						"x": 220,
-						"y": 191,
-						"w": 14,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiWalkDown09.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 51
-					},
-					"frame": {
-						"x": 273,
-						"y": 191,
-						"w": 14,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiWalkDown15.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 51
-					},
-					"frame": {
-						"x": 163,
-						"y": 193,
-						"w": 14,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiWalkDown16.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 51
-					},
-					"frame": {
-						"x": 108,
-						"y": 199,
-						"w": 14,
-						"h": 51
-					}
-				},
-				{
-					"filename": "samuraiDying06.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 10,
-						"w": 22,
-						"h": 50
-					},
-					"frame": {
-						"x": 54,
-						"y": 214,
-						"w": 22,
-						"h": 50
-					}
-				},
-				{
-					"filename": "samuraiStanding21.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 1,
-						"w": 20,
-						"h": 50
-					},
-					"frame": {
-						"x": 1,
-						"y": 221,
-						"w": 20,
-						"h": 50
-					}
-				},
-				{
-					"filename": "samuraiWalkDown05.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 50
-					},
-					"frame": {
-						"x": 216,
-						"y": 207,
-						"w": 15,
-						"h": 50
-					}
-				},
-				{
-					"filename": "samuraiWalkDown06.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 50
-					},
-					"frame": {
-						"x": 161,
-						"y": 209,
-						"w": 15,
-						"h": 50
-					}
-				},
-				{
-					"filename": "samuraiWalkDown08.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 50
-					},
-					"frame": {
-						"x": 106,
-						"y": 215,
-						"w": 15,
-						"h": 50
-					}
-				},
-				{
-					"filename": "samuraiWalkDown17.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 50
-					},
-					"frame": {
-						"x": 213,
-						"y": 224,
-						"w": 15,
-						"h": 50
-					}
-				},
-				{
-					"filename": "samuraiWalkDown19.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 50
-					},
-					"frame": {
-						"x": 158,
-						"y": 226,
-						"w": 15,
-						"h": 50
-					}
-				},
-				{
-					"filename": "samuraiAttackDown16.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 8,
-						"w": 19,
-						"h": 49
-					},
-					"frame": {
-						"x": 106,
-						"y": 232,
-						"w": 19,
-						"h": 49
-					}
-				},
-				{
-					"filename": "samuraiAttackDown21.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 49
-					},
-					"frame": {
-						"x": 53,
-						"y": 238,
-						"w": 15,
-						"h": 49
-					}
-				},
-				{
-					"filename": "samuraiWalkDown07.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 49
-					},
-					"frame": {
-						"x": 1,
-						"y": 243,
-						"w": 15,
-						"h": 49
-					}
-				},
-				{
-					"filename": "samuraiWalkDown18.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 0,
-						"w": 15,
-						"h": 49
-					},
-					"frame": {
-						"x": 210,
-						"y": 241,
-						"w": 15,
-						"h": 49
-					}
-				},
-				{
-					"filename": "samuraiAttackDown22.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 0,
-						"w": 14,
-						"h": 49
-					},
-					"frame": {
-						"x": 157,
-						"y": 243,
-						"w": 14,
-						"h": 49
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft06.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 17,
-						"y": 21,
-						"w": 47,
-						"h": 31
-					},
-					"frame": {
-						"x": 104,
-						"y": 253,
-						"w": 47,
-						"h": 31
-					}
-				},
-				{
-					"filename": "samuraiStanding20.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 3,
-						"w": 29,
-						"h": 47
-					},
-					"frame": {
-						"x": 52,
-						"y": 255,
-						"w": 29,
-						"h": 47
-					}
-				},
-				{
-					"filename": "samuraiDying05.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 18,
-						"y": 11,
-						"w": 27,
-						"h": 46
-					},
-					"frame": {
-						"x": 1,
-						"y": 260,
-						"w": 27,
-						"h": 46
-					}
-				},
-				{
-					"filename": "samuraiDying07.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 15,
-						"w": 23,
-						"h": 46
-					},
-					"frame": {
-						"x": 289,
-						"y": 192,
-						"w": 23,
-						"h": 46
-					}
-				},
-				{
-					"filename": "samuraiAttackRight07.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 19,
-						"w": 43,
-						"h": 45
-					},
-					"frame": {
-						"x": 337,
-						"y": 192,
-						"w": 43,
-						"h": 45
-					}
-				},
-				{
-					"filename": "samuraiAttackRight17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 18,
-						"w": 45,
-						"h": 35
-					},
-					"frame": {
-						"x": 289,
-						"y": 217,
-						"w": 45,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackUp06.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 15,
-						"y": 15,
-						"w": 26,
-						"h": 38
-					},
-					"frame": {
-						"x": 261,
-						"y": 244,
-						"w": 26,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 16,
-						"y": 20,
-						"w": 45,
-						"h": 32
-					},
-					"frame": {
-						"x": 208,
-						"y": 258,
-						"w": 45,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackDown06.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 9,
-						"w": 27,
-						"h": 45
-					},
-					"frame": {
-						"x": 153,
-						"y": 259,
-						"w": 27,
-						"h": 45
-					}
-				},
-				{
-					"filename": "samuraiAttackRight09.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 20,
-						"w": 43,
-						"h": 44
-					},
-					"frame": {
-						"x": 384,
-						"y": 194,
-						"w": 43,
-						"h": 44
-					}
-				},
-				{
-					"filename": "samuraiWalkUp01.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 16,
-						"h": 37
-					},
-					"frame": {
-						"x": 430,
-						"y": 194,
-						"w": 16,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackRight10.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 20,
-						"w": 42,
-						"h": 44
-					},
-					"frame": {
-						"x": 336,
-						"y": 237,
-						"w": 42,
-						"h": 44
-					}
-				},
-				{
-					"filename": "samuraiAttackRight11.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 20,
-						"w": 42,
-						"h": 44
-					},
-					"frame": {
-						"x": 289,
-						"y": 254,
-						"w": 42,
-						"h": 44
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft16.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 11,
-						"y": 20,
-						"w": 44,
-						"h": 32
-					},
-					"frame": {
-						"x": 255,
-						"y": 284,
-						"w": 44,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackRight12.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 20,
-						"w": 41,
-						"h": 44
-					},
-					"frame": {
-						"x": 448,
-						"y": 199,
-						"w": 41,
-						"h": 44
-					}
-				},
-				{
-					"filename": "samuraiWalkUp02.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 16,
-						"h": 37
-					},
-					"frame": {
-						"x": 430,
-						"y": 233,
-						"w": 16,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackUp20.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 17,
-						"h": 38
-					},
-					"frame": {
-						"x": 494,
-						"y": 199,
-						"w": 17,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiWalkUp23.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 16,
-						"h": 37
-					},
-					"frame": {
-						"x": 494,
-						"y": 239,
-						"w": 16,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackRight13.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 20,
-						"w": 41,
-						"h": 44
-					},
-					"frame": {
-						"x": 448,
-						"y": 242,
-						"w": 41,
-						"h": 44
-					}
-				},
-				{
-					"filename": "samuraiWalkUp24.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 16,
-						"h": 37
-					},
-					"frame": {
-						"x": 494,
-						"y": 278,
-						"w": 16,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackRight16.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 9,
-						"y": 18,
-						"w": 44,
-						"h": 35
-					},
-					"frame": {
-						"x": 382,
-						"y": 239,
-						"w": 44,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiStanding02.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 16,
-						"w": 18,
-						"h": 35
-					},
-					"frame": {
-						"x": 428,
-						"y": 272,
-						"w": 18,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackRight20.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 44,
-						"h": 35
-					},
-					"frame": {
-						"x": 448,
-						"y": 285,
-						"w": 44,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft20.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 18,
-						"w": 44,
-						"h": 34
-					},
-					"frame": {
-						"x": 382,
-						"y": 276,
-						"w": 44,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiWalkUp03.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 16,
-						"h": 36
-					},
-					"frame": {
-						"x": 494,
-						"y": 317,
-						"w": 16,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiAttackRight06.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 19,
-						"w": 44,
-						"h": 33
-					},
-					"frame": {
-						"x": 335,
-						"y": 281,
-						"w": 44,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiDying03.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 15,
-						"y": 18,
-						"w": 44,
-						"h": 32
-					},
-					"frame": {
-						"x": 289,
-						"y": 298,
-						"w": 44,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkUp22.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 16,
-						"h": 36
-					},
-					"frame": {
-						"x": 428,
-						"y": 309,
-						"w": 16,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 19,
-						"w": 43,
-						"h": 40
-					},
-					"frame": {
-						"x": 381,
-						"y": 312,
-						"w": 43,
-						"h": 40
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 15,
-						"w": 43,
-						"h": 37
-					},
-					"frame": {
-						"x": 335,
-						"y": 316,
-						"w": 43,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft09.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 16,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 446,
-						"y": 322,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiAttackUp17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 14,
-						"w": 19,
-						"h": 39
-					},
-					"frame": {
-						"x": 491,
-						"y": 355,
-						"w": 19,
-						"h": 39
-					}
-				},
-				{
-					"filename": "samuraiStanding01.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 16,
-						"w": 16,
-						"h": 34
-					},
-					"frame": {
-						"x": 426,
-						"y": 347,
-						"w": 16,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiStanding07.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 380,
-						"y": 354,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 444,
-						"y": 360,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiAttackDown07.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 25,
-						"w": 21,
-						"h": 39
-					},
-					"frame": {
-						"x": 489,
-						"y": 396,
-						"w": 21,
-						"h": 39
-					}
-				},
-				{
-					"filename": "samuraiAttackUp05.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 17,
-						"w": 16,
-						"h": 32
-					},
-					"frame": {
-						"x": 425,
-						"y": 383,
-						"w": 16,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiStanding09.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 443,
-						"y": 398,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 49,
-						"y": 286,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding11.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 1,
-						"y": 289,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding12.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 94,
-						"y": 286,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding13.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 139,
-						"y": 288,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiAttackUp19.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 19,
-						"h": 39
-					},
-					"frame": {
-						"x": 184,
-						"y": 288,
-						"w": 19,
-						"h": 39
-					}
-				},
-				{
-					"filename": "samuraiStanding14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 205,
-						"y": 292,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding15.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 46,
-						"y": 324,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding16.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 15,
-						"w": 43,
-						"h": 36
-					},
-					"frame": {
-						"x": 1,
-						"y": 327,
-						"w": 43,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding06.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 16,
-						"w": 43,
-						"h": 35
-					},
-					"frame": {
-						"x": 91,
-						"y": 324,
-						"w": 43,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft22.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 17,
-						"w": 43,
-						"h": 34
-					},
-					"frame": {
-						"x": 136,
-						"y": 326,
-						"w": 43,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft23.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 17,
-						"w": 43,
-						"h": 34
-					},
-					"frame": {
-						"x": 91,
-						"y": 361,
-						"w": 43,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiAttackRight14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 19,
-						"w": 43,
-						"h": 34
-					},
-					"frame": {
-						"x": 46,
-						"y": 362,
-						"w": 43,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft01.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 17,
-						"w": 43,
-						"h": 33
-					},
-					"frame": {
-						"x": 1,
-						"y": 365,
-						"w": 43,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackUp16.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 19,
-						"h": 38
-					},
-					"frame": {
-						"x": 181,
-						"y": 329,
-						"w": 19,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft04.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 18,
-						"w": 43,
-						"h": 33
-					},
-					"frame": {
-						"x": 136,
-						"y": 362,
-						"w": 43,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft21.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 18,
-						"w": 43,
-						"h": 33
-					},
-					"frame": {
-						"x": 202,
-						"y": 330,
-						"w": 43,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiStanding19.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 9,
-						"w": 38,
-						"h": 40
-					},
-					"frame": {
-						"x": 247,
-						"y": 330,
-						"w": 38,
-						"h": 40
-					}
-				},
-				{
-					"filename": "samuraiAttackRight21.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 33
-					},
-					"frame": {
-						"x": 202,
-						"y": 365,
-						"w": 43,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackUp18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 19,
-						"h": 38
-					},
-					"frame": {
-						"x": 181,
-						"y": 369,
-						"w": 19,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiWalkLeft01.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 17,
-						"w": 43,
-						"h": 33
-					},
-					"frame": {
-						"x": 289,
-						"y": 332,
-						"w": 43,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft07.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 20,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 334,
-						"y": 355,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackRight22.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 289,
-						"y": 367,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying26.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 247,
-						"y": 370,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackRight23.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 202,
-						"y": 400,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackRight24.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 334,
-						"y": 389,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight01.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 289,
-						"y": 401,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying33.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 247,
-						"y": 409,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiWalkRight02.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 379,
-						"y": 392,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight03.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 334,
-						"y": 423,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight04.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 289,
-						"y": 435,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackUp21.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 36
-					},
-					"frame": {
-						"x": 424,
-						"y": 417,
-						"w": 15,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiWalkRight05.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 379,
-						"y": 426,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight06.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 334,
-						"y": 457,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight07.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 441,
-						"y": 436,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkUp04.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 36
-					},
-					"frame": {
-						"x": 424,
-						"y": 455,
-						"w": 15,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiWalkRight08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 379,
-						"y": 460,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 21,
-						"w": 23,
-						"h": 40
-					},
-					"frame": {
-						"x": 486,
-						"y": 437,
-						"w": 23,
-						"h": 40
-					}
-				},
-				{
-					"filename": "samuraiWalkRight09.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 441,
-						"y": 470,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkUp21.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 36
-					},
-					"frame": {
-						"x": 424,
-						"y": 493,
-						"w": 15,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiStanding03.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 16,
-						"w": 23,
-						"h": 35
-					},
-					"frame": {
-						"x": 486,
-						"y": 479,
-						"w": 23,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiWalkRight10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 441,
-						"y": 504,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackUp03.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 17,
-						"w": 15,
-						"h": 35
-					},
-					"frame": {
-						"x": 486,
-						"y": 516,
-						"w": 15,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiWalkRight11.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 91,
-						"y": 397,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight12.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 46,
-						"y": 398,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight13.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 1,
-						"y": 400,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 136,
-						"y": 397,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackUp04.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 18,
-						"w": 15,
-						"h": 35
-					},
-					"frame": {
-						"x": 181,
-						"y": 409,
-						"w": 15,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiWalkRight15.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 198,
-						"y": 434,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight16.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 243,
-						"y": 448,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 288,
-						"y": 469,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 333,
-						"y": 491,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight19.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 378,
-						"y": 494,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight20.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 91,
-						"y": 431,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight21.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 46,
-						"y": 432,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight22.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 1,
-						"y": 434,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkRight23.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 136,
-						"y": 431,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiWalkUp05.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 35
-					},
-					"frame": {
-						"x": 181,
-						"y": 446,
-						"w": 15,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiWalkRight24.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 18,
-						"w": 43,
-						"h": 32
-					},
-					"frame": {
-						"x": 198,
-						"y": 468,
-						"w": 43,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying02.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 5,
-						"w": 28,
-						"h": 43
-					},
-					"frame": {
-						"x": 243,
-						"y": 482,
-						"w": 28,
-						"h": 43
-					}
-				},
-				{
-					"filename": "samuraiAttackDown14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 18,
-						"y": 25,
-						"w": 42,
-						"h": 39
-					},
-					"frame": {
-						"x": 288,
-						"y": 503,
-						"w": 42,
-						"h": 39
-					}
-				},
-				{
-					"filename": "samuraiAttackUp14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 15,
-						"w": 42,
-						"h": 38
-					},
-					"frame": {
-						"x": 332,
-						"y": 525,
-						"w": 42,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackRight04.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 13,
-						"w": 42,
-						"h": 37
-					},
-					"frame": {
-						"x": 376,
-						"y": 528,
-						"w": 42,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiWalkUp08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 35
-					},
-					"frame": {
-						"x": 420,
-						"y": 531,
-						"w": 15,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackRight03.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 14,
-						"w": 42,
-						"h": 36
-					},
-					"frame": {
-						"x": 437,
-						"y": 538,
-						"w": 42,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiDying09.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 24,
-						"w": 29,
-						"h": 37
-					},
-					"frame": {
-						"x": 481,
-						"y": 553,
-						"w": 29,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 17,
-						"w": 42,
-						"h": 35
-					},
-					"frame": {
-						"x": 91,
-						"y": 465,
-						"w": 42,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackRight05.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 16,
-						"w": 42,
-						"h": 35
-					},
-					"frame": {
-						"x": 46,
-						"y": 466,
-						"w": 42,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiStanding17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 15,
-						"w": 42,
-						"h": 35
-					},
-					"frame": {
-						"x": 1,
-						"y": 468,
-						"w": 42,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft05.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 17,
-						"w": 42,
-						"h": 34
-					},
-					"frame": {
-						"x": 135,
-						"y": 465,
-						"w": 42,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiWalkUp19.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 35
-					},
-					"frame": {
-						"x": 179,
-						"y": 483,
-						"w": 15,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackRight02.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 17,
-						"w": 42,
-						"h": 33
-					},
-					"frame": {
-						"x": 135,
-						"y": 501,
-						"w": 42,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiAttackDown10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 25,
-						"w": 41,
-						"h": 39
-					},
-					"frame": {
-						"x": 90,
-						"y": 502,
-						"w": 41,
-						"h": 39
-					}
-				},
-				{
-					"filename": "samuraiAttackDown11.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 25,
-						"w": 41,
-						"h": 39
-					},
-					"frame": {
-						"x": 45,
-						"y": 503,
-						"w": 41,
-						"h": 39
-					}
-				},
-				{
-					"filename": "samuraiAttackDown12.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 25,
-						"w": 41,
-						"h": 39
-					},
-					"frame": {
-						"x": 1,
-						"y": 505,
-						"w": 41,
-						"h": 39
-					}
-				},
-				{
-					"filename": "samuraiAttackDown13.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 25,
-						"w": 41,
-						"h": 39
-					},
-					"frame": {
-						"x": 196,
-						"y": 502,
-						"w": 41,
-						"h": 39
-					}
-				},
-				{
-					"filename": "samuraiWalkUp20.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 35
-					},
-					"frame": {
-						"x": 179,
-						"y": 520,
-						"w": 15,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackDown08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 25,
-						"w": 41,
-						"h": 38
-					},
-					"frame": {
-						"x": 133,
-						"y": 536,
-						"w": 41,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackDown09.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 25,
-						"w": 41,
-						"h": 38
-					},
-					"frame": {
-						"x": 88,
-						"y": 543,
-						"w": 41,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackUp08.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 41,
-						"h": 38
-					},
-					"frame": {
-						"x": 44,
-						"y": 544,
-						"w": 41,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackUp09.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 41,
-						"h": 38
-					},
-					"frame": {
-						"x": 1,
-						"y": 546,
-						"w": 41,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackUp10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 41,
-						"h": 38
-					},
-					"frame": {
-						"x": 239,
-						"y": 512,
-						"w": 41,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackUp11.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 41,
-						"h": 38
-					},
-					"frame": {
-						"x": 196,
-						"y": 543,
-						"w": 41,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiWalkUp06.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 34
-					},
-					"frame": {
-						"x": 176,
-						"y": 557,
-						"w": 15,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiAttackUp12.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 41,
-						"h": 38
-					},
-					"frame": {
-						"x": 131,
-						"y": 576,
-						"w": 41,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiAttackUp13.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 41,
-						"h": 38
-					},
-					"frame": {
-						"x": 87,
-						"y": 583,
-						"w": 41,
-						"h": 38
-					}
-				},
-				{
-					"filename": "samuraiDying27.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 27,
-						"w": 41,
-						"h": 37
-					},
-					"frame": {
-						"x": 44,
-						"y": 584,
-						"w": 41,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying28.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 27,
-						"w": 41,
-						"h": 37
-					},
-					"frame": {
-						"x": 1,
-						"y": 586,
-						"w": 41,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying29.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 27,
-						"w": 41,
-						"h": 37
-					},
-					"frame": {
-						"x": 282,
-						"y": 544,
-						"w": 41,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying30.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 27,
-						"w": 41,
-						"h": 37
-					},
-					"frame": {
-						"x": 239,
-						"y": 552,
-						"w": 41,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying31.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 27,
-						"w": 41,
-						"h": 37
-					},
-					"frame": {
-						"x": 193,
-						"y": 583,
-						"w": 41,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiWalkUp07.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 34
-					},
-					"frame": {
-						"x": 174,
-						"y": 593,
-						"w": 15,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiDying32.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 27,
-						"w": 41,
-						"h": 37
-					},
-					"frame": {
-						"x": 130,
-						"y": 616,
-						"w": 41,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying37.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 27,
-						"w": 41,
-						"h": 37
-					},
-					"frame": {
-						"x": 325,
-						"y": 565,
-						"w": 41,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying38.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 19,
-						"y": 27,
-						"w": 41,
-						"h": 37
-					},
-					"frame": {
-						"x": 282,
-						"y": 583,
-						"w": 41,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft11.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 2,
-						"y": 17,
-						"w": 41,
-						"h": 35
-					},
-					"frame": {
-						"x": 236,
-						"y": 591,
-						"w": 41,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiStanding18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 23,
-						"y": 15,
-						"w": 41,
-						"h": 35
-					},
-					"frame": {
-						"x": 191,
-						"y": 622,
-						"w": 41,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiWalkUp17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 34
-					},
-					"frame": {
-						"x": 173,
-						"y": 629,
-						"w": 15,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft12.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 2,
-						"y": 18,
-						"w": 41,
-						"h": 34
-					},
-					"frame": {
-						"x": 368,
-						"y": 567,
-						"w": 41,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiWalkUp18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 15,
-						"h": 34
-					},
-					"frame": {
-						"x": 411,
-						"y": 568,
-						"w": 15,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiAttackLeft13.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 2,
-						"y": 18,
-						"w": 41,
-						"h": 34
-					},
-					"frame": {
-						"x": 368,
-						"y": 603,
-						"w": 41,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiDying04.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 15,
-						"y": 16,
-						"w": 41,
-						"h": 31
-					},
-					"frame": {
-						"x": 325,
-						"y": 604,
-						"w": 41,
-						"h": 31
-					}
-				},
-				{
-					"filename": "samuraiDying34.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 279,
-						"y": 622,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying35.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 234,
-						"y": 628,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying36.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 190,
-						"y": 659,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying39.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 321,
-						"y": 637,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying40.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 276,
-						"y": 661,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying41.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 232,
-						"y": 667,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying42.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 428,
-						"y": 576,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackUp01.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 411,
-						"y": 604,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiDying43.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 470,
-						"y": 592,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying44.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 427,
-						"y": 615,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying45.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 469,
-						"y": 631,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying46.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 363,
-						"y": 639,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiDying47.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 40,
-						"h": 37
-					},
-					"frame": {
-						"x": 318,
-						"y": 676,
-						"w": 40,
-						"h": 37
-					}
-				},
-				{
-					"filename": "samuraiAttackRight15.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 13,
-						"w": 36,
-						"h": 40
-					},
-					"frame": {
-						"x": 274,
-						"y": 700,
-						"w": 36,
-						"h": 40
-					}
-				},
-				{
-					"filename": "samuraiAttackUp02.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 25,
-						"y": 16,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 405,
-						"y": 642,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiDying22.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 28,
-						"w": 40,
-						"h": 35
-					},
-					"frame": {
-						"x": 360,
-						"y": 678,
-						"w": 40,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiDying23.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 28,
-						"w": 40,
-						"h": 35
-					},
-					"frame": {
-						"x": 421,
-						"y": 654,
-						"w": 40,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiAttackUp22.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 402,
-						"y": 680,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiDying24.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 28,
-						"w": 40,
-						"h": 35
-					},
-					"frame": {
-						"x": 463,
-						"y": 670,
-						"w": 40,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiDying25.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 28,
-						"w": 40,
-						"h": 35
-					},
-					"frame": {
-						"x": 418,
-						"y": 691,
-						"w": 40,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiDying21.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 29,
-						"w": 40,
-						"h": 34
-					},
-					"frame": {
-						"x": 460,
-						"y": 707,
-						"w": 40,
-						"h": 34
-					}
-				},
-				{
-					"filename": "samuraiDying20.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 29,
-						"w": 40,
-						"h": 33
-					},
-					"frame": {
-						"x": 316,
-						"y": 715,
-						"w": 40,
-						"h": 33
-					}
-				},
-				{
-					"filename": "samuraiDying12.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 30,
-						"w": 40,
-						"h": 32
-					},
-					"frame": {
-						"x": 358,
-						"y": 715,
-						"w": 40,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackUp23.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 400,
-						"y": 718,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiDying13.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 30,
-						"w": 40,
-						"h": 32
-					},
-					"frame": {
-						"x": 358,
-						"y": 749,
-						"w": 40,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying14.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 30,
-						"w": 40,
-						"h": 32
-					},
-					"frame": {
-						"x": 416,
-						"y": 728,
-						"w": 40,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackUp24.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 400,
-						"y": 756,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiDying15.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 30,
-						"w": 40,
-						"h": 32
-					},
-					"frame": {
-						"x": 458,
-						"y": 743,
-						"w": 40,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying16.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 30,
-						"w": 40,
-						"h": 32
-					},
-					"frame": {
-						"x": 416,
-						"y": 762,
-						"w": 40,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying17.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 30,
-						"w": 40,
-						"h": 32
-					},
-					"frame": {
-						"x": 458,
-						"y": 777,
-						"w": 40,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying18.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 30,
-						"w": 40,
-						"h": 32
-					},
-					"frame": {
-						"x": 44,
-						"y": 623,
-						"w": 40,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiDying19.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 30,
-						"w": 40,
-						"h": 32
-					},
-					"frame": {
-						"x": 1,
-						"y": 625,
-						"w": 40,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackUp15.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 10,
-						"y": 13,
-						"w": 32,
-						"h": 40
-					},
-					"frame": {
-						"x": 86,
-						"y": 623,
-						"w": 32,
-						"h": 40
-					}
-				},
-				{
-					"filename": "samuraiStanding05.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 21,
-						"y": 16,
-						"w": 39,
-						"h": 35
-					},
-					"frame": {
-						"x": 128,
-						"y": 655,
-						"w": 39,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiWalkUp10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 169,
-						"y": 665,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiDying11.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 20,
-						"y": 29,
-						"w": 39,
-						"h": 32
-					},
-					"frame": {
-						"x": 185,
-						"y": 698,
-						"w": 39,
-						"h": 32
-					}
-				},
-				{
-					"filename": "samuraiAttackDown15.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 20,
-						"w": 32,
-						"h": 37
-					},
-					"frame": {
-						"x": 226,
-						"y": 706,
-						"w": 32,
-						"h": 37
+						"w": 9,
+						"h": 6
 					}
 				},
 				{
@@ -5348,125 +35,1847 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 64,
-						"h": 64
+						"w": 128,
+						"h": 128
 					},
 					"spriteSourceSize": {
-						"x": 7,
-						"y": 21,
-						"w": 36,
-						"h": 31
+						"x": 16,
+						"y": 43,
+						"w": 69,
+						"h": 59
+					},
+					"frame": {
+						"x": 12,
+						"y": 1,
+						"w": 69,
+						"h": 59
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 35,
+						"y": 43,
+						"w": 93,
+						"h": 59
+					},
+					"frame": {
+						"x": 83,
+						"y": 1,
+						"w": 93,
+						"h": 59
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 34,
+						"y": 42,
+						"w": 87,
+						"h": 60
+					},
+					"frame": {
+						"x": 178,
+						"y": 1,
+						"w": 87,
+						"h": 60
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 42,
+						"w": 85,
+						"h": 60
+					},
+					"frame": {
+						"x": 267,
+						"y": 1,
+						"w": 85,
+						"h": 60
+					}
+				},
+				{
+					"filename": "samuraiDying4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 32,
+						"y": 32,
+						"w": 79,
+						"h": 60
+					},
+					"frame": {
+						"x": 354,
+						"y": 1,
+						"w": 79,
+						"h": 60
+					}
+				},
+				{
+					"filename": "samuraiAttackUp5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 36,
+						"w": 30,
+						"h": 61
+					},
+					"frame": {
+						"x": 435,
+						"y": 1,
+						"w": 30,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 467,
+						"y": 1,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 553,
+						"y": 1,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 639,
+						"y": 1,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 725,
+						"y": 1,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 811,
+						"y": 1,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 41,
+						"w": 85,
+						"h": 61
+					},
+					"frame": {
+						"x": 897,
+						"y": 1,
+						"w": 85,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 1,
+						"y": 64,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 38,
+						"w": 128,
+						"h": 61
+					},
+					"frame": {
+						"x": 87,
+						"y": 64,
+						"w": 128,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 217,
+						"y": 64,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 303,
+						"y": 64,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 31,
+						"y": 36,
+						"w": 85,
+						"h": 61
+					},
+					"frame": {
+						"x": 389,
+						"y": 64,
+						"w": 85,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 61
+					},
+					"frame": {
+						"x": 476,
+						"y": 64,
+						"w": 84,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 60,
+						"w": 77,
+						"h": 61
+					},
+					"frame": {
+						"x": 562,
+						"y": 64,
+						"w": 77,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 60,
+						"w": 77,
+						"h": 61
+					},
+					"frame": {
+						"x": 641,
+						"y": 64,
+						"w": 77,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 60,
+						"w": 77,
+						"h": 61
+					},
+					"frame": {
+						"x": 720,
+						"y": 64,
+						"w": 77,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 60,
+						"w": 77,
+						"h": 61
+					},
+					"frame": {
+						"x": 799,
+						"y": 64,
+						"w": 77,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 60,
+						"w": 77,
+						"h": 61
+					},
+					"frame": {
+						"x": 878,
+						"y": 64,
+						"w": 77,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 59,
+						"w": 75,
+						"h": 61
+					},
+					"frame": {
+						"x": 1,
+						"y": 127,
+						"w": 75,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 60,
+						"w": 77,
+						"h": 61
+					},
+					"frame": {
+						"x": 78,
+						"y": 127,
+						"w": 77,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 60,
+						"w": 77,
+						"h": 61
+					},
+					"frame": {
+						"x": 157,
+						"y": 127,
+						"w": 77,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiDying12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 60,
+						"w": 77,
+						"h": 61
+					},
+					"frame": {
+						"x": 236,
+						"y": 127,
+						"w": 77,
+						"h": 61
+					}
+				},
+				{
+					"filename": "samuraiWalkRight6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 315,
+						"y": 127,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 401,
+						"y": 127,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiAttackRight1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 128,
+						"h": 62
+					},
+					"frame": {
+						"x": 487,
+						"y": 127,
+						"w": 128,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiAttackRight22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 617,
+						"y": 127,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 703,
+						"y": 127,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 789,
+						"y": 127,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 875,
+						"y": 127,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiAttackRight23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 1,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 87,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 173,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 259,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 345,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiAttackRight24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 431,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 517,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 603,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 689,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 775,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 861,
+						"y": 191,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkRight15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 62
+					},
+					"frame": {
+						"x": 1,
+						"y": 255,
+						"w": 84,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 38,
+						"w": 83,
+						"h": 62
+					},
+					"frame": {
+						"x": 87,
+						"y": 255,
+						"w": 83,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 34,
+						"y": 40,
+						"w": 91,
+						"h": 62
+					},
+					"frame": {
+						"x": 172,
+						"y": 255,
+						"w": 91,
+						"h": 62
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
 					},
 					"frame": {
 						"x": 265,
-						"y": 738,
-						"w": 36,
-						"h": 31
+						"y": 255,
+						"w": 84,
+						"h": 63
 					}
 				},
 				{
-					"filename": "samuraiWalkUp11.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 303,
-						"y": 750,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiWalkUp12.png",
+					"filename": "samuraiWalkLeft15.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 64,
-						"h": 64
+						"w": 128,
+						"h": 128
 					},
 					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
 					},
 					"frame": {
-						"x": 341,
-						"y": 750,
-						"w": 14,
-						"h": 36
+						"x": 351,
+						"y": 255,
+						"w": 84,
+						"h": 63
 					}
 				},
 				{
-					"filename": "samuraiWalkUp13.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 303,
-						"y": 766,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiWalkUp14.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
-					},
-					"frame": {
-						"x": 357,
-						"y": 783,
-						"w": 14,
-						"h": 36
-					}
-				},
-				{
-					"filename": "samuraiWalkUp15.png",
+					"filename": "samuraiAttackLeft2.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 64,
-						"h": 64
+						"w": 128,
+						"h": 128
 					},
 					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 36
+						"x": 46,
+						"y": 36,
+						"w": 82,
+						"h": 63
 					},
 					"frame": {
-						"x": 395,
-						"y": 794,
-						"w": 14,
-						"h": 36
+						"x": 437,
+						"y": 255,
+						"w": 82,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 34,
+						"y": 39,
+						"w": 92,
+						"h": 63
+					},
+					"frame": {
+						"x": 521,
+						"y": 255,
+						"w": 92,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiDying20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 59,
+						"w": 77,
+						"h": 63
+					},
+					"frame": {
+						"x": 615,
+						"y": 255,
+						"w": 77,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 694,
+						"y": 255,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 780,
+						"y": 255,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 866,
+						"y": 255,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 1,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 87,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 173,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 259,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiAttackRight21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 345,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 431,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 517,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 603,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 689,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 775,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 861,
+						"y": 320,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiAttackRight2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 36,
+						"w": 82,
+						"h": 63
+					},
+					"frame": {
+						"x": 1,
+						"y": 385,
+						"w": 82,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 85,
+						"y": 385,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 171,
+						"y": 385,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 257,
+						"y": 385,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 343,
+						"y": 385,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 429,
+						"y": 385,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 35,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 515,
+						"y": 385,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 35,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 601,
+						"y": 385,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 35,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 687,
+						"y": 385,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiDying21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 59,
+						"w": 77,
+						"h": 64
+					},
+					"frame": {
+						"x": 773,
+						"y": 385,
+						"w": 77,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 35,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 852,
+						"y": 385,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 38,
+						"w": 85,
+						"h": 64
+					},
+					"frame": {
+						"x": 938,
+						"y": 385,
+						"w": 85,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 1,
+						"y": 451,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 36,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 87,
+						"y": 451,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 37,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 173,
+						"y": 451,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 35,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 259,
+						"y": 451,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiAttackRight6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 39,
+						"w": 86,
+						"h": 64
+					},
+					"frame": {
+						"x": 345,
+						"y": 451,
+						"w": 86,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 38,
+						"w": 79,
+						"h": 64
+					},
+					"frame": {
+						"x": 433,
+						"y": 451,
+						"w": 79,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiWalkLeft22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 35,
+						"w": 84,
+						"h": 64
+					},
+					"frame": {
+						"x": 514,
+						"y": 451,
+						"w": 84,
+						"h": 64
+					}
+				},
+				{
+					"filename": "samuraiWalkUp6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 27,
+						"h": 65
+					},
+					"frame": {
+						"x": 600,
+						"y": 451,
+						"w": 27,
+						"h": 65
+					}
+				},
+				{
+					"filename": "samuraiWalkUp7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 27,
+						"h": 65
+					},
+					"frame": {
+						"x": 629,
+						"y": 451,
+						"w": 27,
+						"h": 65
 					}
 				},
 				{
@@ -5474,83 +1883,3674 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 64,
-						"h": 64
+						"w": 128,
+						"h": 128
 					},
 					"spriteSourceSize": {
-						"x": 20,
-						"y": 27,
-						"w": 35,
-						"h": 34
+						"x": 41,
+						"y": 55,
+						"w": 68,
+						"h": 65
 					},
 					"frame": {
-						"x": 411,
-						"y": 796,
-						"w": 35,
-						"h": 34
+						"x": 658,
+						"y": 451,
+						"w": 68,
+						"h": 65
 					}
 				},
 				{
-					"filename": "samuraiStanding04.png",
-					"rotated": true,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 64,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 22,
-						"y": 16,
-						"w": 31,
-						"h": 35
-					},
-					"frame": {
-						"x": 448,
-						"y": 811,
-						"w": 31,
-						"h": 35
-					}
-				},
-				{
-					"filename": "samuraiWalkUp09.png",
+					"filename": "samuraiWalkUp18.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 64,
-						"h": 64
+						"w": 128,
+						"h": 128
 					},
 					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 35
+						"x": 49,
+						"y": 32,
+						"w": 27,
+						"h": 65
 					},
 					"frame": {
-						"x": 485,
-						"y": 811,
-						"w": 14,
-						"h": 35
+						"x": 728,
+						"y": 451,
+						"w": 27,
+						"h": 65
+					}
+				},
+				{
+					"filename": "samuraiStanding2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 34,
+						"w": 33,
+						"h": 65
+					},
+					"frame": {
+						"x": 757,
+						"y": 451,
+						"w": 33,
+						"h": 65
+					}
+				},
+				{
+					"filename": "samuraiWalkUp17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 27,
+						"h": 65
+					},
+					"frame": {
+						"x": 792,
+						"y": 451,
+						"w": 27,
+						"h": 65
+					}
+				},
+				{
+					"filename": "samuraiAttackRight14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 39,
+						"w": 85,
+						"h": 65
+					},
+					"frame": {
+						"x": 821,
+						"y": 451,
+						"w": 85,
+						"h": 65
+					}
+				},
+				{
+					"filename": "samuraiStanding1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 34,
+						"w": 29,
+						"h": 65
+					},
+					"frame": {
+						"x": 908,
+						"y": 451,
+						"w": 29,
+						"h": 65
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 37,
+						"w": 79,
+						"h": 65
+					},
+					"frame": {
+						"x": 939,
+						"y": 451,
+						"w": 79,
+						"h": 65
+					}
+				},
+				{
+					"filename": "samuraiStanding4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 34,
+						"w": 58,
+						"h": 66
+					},
+					"frame": {
+						"x": 1,
+						"y": 518,
+						"w": 58,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiStanding5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 34,
+						"w": 75,
+						"h": 66
+					},
+					"frame": {
+						"x": 61,
+						"y": 518,
+						"w": 75,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiStanding3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 34,
+						"w": 43,
+						"h": 66
+					},
+					"frame": {
+						"x": 138,
+						"y": 518,
+						"w": 43,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiAttackRight17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 38,
+						"w": 87,
+						"h": 66
+					},
+					"frame": {
+						"x": 183,
+						"y": 518,
+						"w": 87,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiAttackRight16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 38,
+						"w": 85,
+						"h": 66
+					},
+					"frame": {
+						"x": 272,
+						"y": 518,
+						"w": 85,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 34,
+						"w": 80,
+						"h": 66
+					},
+					"frame": {
+						"x": 359,
+						"y": 518,
+						"w": 80,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 36,
+						"w": 80,
+						"h": 66
+					},
+					"frame": {
+						"x": 441,
+						"y": 518,
+						"w": 80,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiWalkUp19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 27,
+						"h": 66
+					},
+					"frame": {
+						"x": 523,
+						"y": 518,
+						"w": 27,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiWalkUp8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 27,
+						"h": 66
+					},
+					"frame": {
+						"x": 552,
+						"y": 518,
+						"w": 27,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiAttackUp4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 38,
+						"w": 26,
+						"h": 66
+					},
+					"frame": {
+						"x": 581,
+						"y": 518,
+						"w": 26,
+						"h": 66
+					}
+				},
+				{
+					"filename": "samuraiAttackUp3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 36,
+						"w": 25,
+						"h": 67
+					},
+					"frame": {
+						"x": 609,
+						"y": 518,
+						"w": 25,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 35,
+						"w": 81,
+						"h": 67
+					},
+					"frame": {
+						"x": 636,
+						"y": 518,
+						"w": 81,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiAttackRight20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 36,
+						"w": 85,
+						"h": 67
+					},
+					"frame": {
+						"x": 719,
+						"y": 518,
+						"w": 85,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiStanding17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 32,
+						"w": 83,
+						"h": 67
+					},
+					"frame": {
+						"x": 806,
+						"y": 518,
+						"w": 83,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiAttackRight18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 37,
+						"w": 91,
+						"h": 67
+					},
+					"frame": {
+						"x": 891,
+						"y": 518,
+						"w": 91,
+						"h": 67
 					}
 				},
 				{
 					"filename": "samuraiWalkUp16.png",
-					"rotated": true,
+					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 64,
-						"h": 64
+						"w": 128,
+						"h": 128
 					},
 					"spriteSourceSize": {
-						"x": 24,
-						"y": 15,
-						"w": 14,
-						"h": 35
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 67
 					},
 					"frame": {
+						"x": 984,
+						"y": 518,
+						"w": 25,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiStanding18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 31,
+						"w": 80,
+						"h": 67
+					},
+					"frame": {
+						"x": 1,
+						"y": 587,
+						"w": 80,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiWalkUp9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 67
+					},
+					"frame": {
+						"x": 83,
+						"y": 587,
+						"w": 25,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiWalkUp20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 27,
+						"h": 67
+					},
+					"frame": {
+						"x": 110,
+						"y": 587,
+						"w": 27,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiWalkUp5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 27,
+						"h": 67
+					},
+					"frame": {
+						"x": 139,
+						"y": 587,
+						"w": 27,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiStanding6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 33,
+						"w": 84,
+						"h": 67
+					},
+					"frame": {
+						"x": 168,
+						"y": 587,
+						"w": 84,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiDying22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 57,
+						"w": 77,
+						"h": 67
+					},
+					"frame": {
+						"x": 254,
+						"y": 587,
+						"w": 77,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiAttackRight5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 33,
+						"w": 80,
+						"h": 67
+					},
+					"frame": {
+						"x": 333,
+						"y": 587,
+						"w": 80,
+						"h": 67
+					}
+				},
+				{
+					"filename": "samuraiStanding16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
 						"x": 43,
+						"y": 32,
+						"w": 84,
+						"h": 68
+					},
+					"frame": {
+						"x": 415,
+						"y": 587,
+						"w": 84,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiStanding14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 32,
+						"w": 84,
+						"h": 68
+					},
+					"frame": {
+						"x": 501,
+						"y": 587,
+						"w": 84,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiStanding15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 32,
+						"w": 84,
+						"h": 68
+					},
+					"frame": {
+						"x": 587,
+						"y": 587,
+						"w": 84,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiWalkUp21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 28,
+						"h": 68
+					},
+					"frame": {
+						"x": 673,
+						"y": 587,
+						"w": 28,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiWalkUp15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 68
+					},
+					"frame": {
+						"x": 703,
+						"y": 587,
+						"w": 25,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiWalkUp4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 28,
+						"h": 68
+					},
+					"frame": {
+						"x": 730,
+						"y": 587,
+						"w": 28,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiDying24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 56,
+						"w": 77,
+						"h": 68
+					},
+					"frame": {
+						"x": 760,
+						"y": 587,
+						"w": 77,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiDying25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 56,
+						"w": 76,
+						"h": 68
+					},
+					"frame": {
+						"x": 839,
+						"y": 587,
+						"w": 76,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiAttackRight19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 36,
+						"w": 92,
+						"h": 68
+					},
+					"frame": {
+						"x": 917,
+						"y": 587,
+						"w": 92,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiAttackUp21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 27,
+						"h": 68
+					},
+					"frame": {
+						"x": 1,
 						"y": 657,
-						"w": 14,
-						"h": 35
+						"w": 27,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiDying23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 56,
+						"w": 77,
+						"h": 68
+					},
+					"frame": {
+						"x": 30,
+						"y": 657,
+						"w": 77,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 34,
+						"w": 83,
+						"h": 68
+					},
+					"frame": {
+						"x": 109,
+						"y": 657,
+						"w": 83,
+						"h": 68
+					}
+				},
+				{
+					"filename": "samuraiAttackUp22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 69
+					},
+					"frame": {
+						"x": 194,
+						"y": 657,
+						"w": 25,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiStanding10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 31,
+						"w": 84,
+						"h": 69
+					},
+					"frame": {
+						"x": 221,
+						"y": 657,
+						"w": 84,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiWalkUp22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 28,
+						"h": 69
+					},
+					"frame": {
+						"x": 307,
+						"y": 657,
+						"w": 28,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiStanding12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 31,
+						"w": 84,
+						"h": 69
+					},
+					"frame": {
+						"x": 337,
+						"y": 657,
+						"w": 84,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiWalkUp3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 28,
+						"h": 69
+					},
+					"frame": {
+						"x": 423,
+						"y": 657,
+						"w": 28,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiAttackUp23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 69
+					},
+					"frame": {
+						"x": 453,
+						"y": 657,
+						"w": 25,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiStanding13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 31,
+						"w": 84,
+						"h": 69
+					},
+					"frame": {
+						"x": 480,
+						"y": 657,
+						"w": 84,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiStanding11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 31,
+						"w": 84,
+						"h": 69
+					},
+					"frame": {
+						"x": 566,
+						"y": 657,
+						"w": 84,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiStanding8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 31,
+						"w": 85,
+						"h": 69
+					},
+					"frame": {
+						"x": 652,
+						"y": 657,
+						"w": 85,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiWalkUp10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 69
+					},
+					"frame": {
+						"x": 739,
+						"y": 657,
+						"w": 25,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiAttackUp2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 33,
+						"w": 25,
+						"h": 69
+					},
+					"frame": {
+						"x": 766,
+						"y": 657,
+						"w": 25,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiWalkUp11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 69
+					},
+					"frame": {
+						"x": 793,
+						"y": 657,
+						"w": 25,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiStanding7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 31,
+						"w": 86,
+						"h": 69
+					},
+					"frame": {
+						"x": 820,
+						"y": 657,
+						"w": 86,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiStanding9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 31,
+						"w": 84,
+						"h": 69
+					},
+					"frame": {
+						"x": 908,
+						"y": 657,
+						"w": 84,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiWalkUp13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 69
+					},
+					"frame": {
+						"x": 994,
+						"y": 657,
+						"w": 25,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiWalkUp14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 69
+					},
+					"frame": {
+						"x": 1,
+						"y": 728,
+						"w": 25,
+						"h": 69
+					}
+				},
+				{
+					"filename": "samuraiWalkUp12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 70
+					},
+					"frame": {
+						"x": 28,
+						"y": 728,
+						"w": 25,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiDying26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 55,
+						"w": 77,
+						"h": 70
+					},
+					"frame": {
+						"x": 55,
+						"y": 728,
+						"w": 77,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 32,
+						"w": 85,
+						"h": 70
+					},
+					"frame": {
+						"x": 134,
+						"y": 728,
+						"w": 85,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiAttackRight3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 29,
+						"w": 82,
+						"h": 70
+					},
+					"frame": {
+						"x": 221,
+						"y": 728,
+						"w": 82,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiAttackUp24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 70
+					},
+					"frame": {
+						"x": 305,
+						"y": 728,
+						"w": 25,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiAttackUp1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 32,
+						"w": 25,
+						"h": 70
+					},
+					"frame": {
+						"x": 332,
+						"y": 728,
+						"w": 25,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiWalkUp1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 28,
+						"h": 70
+					},
+					"frame": {
+						"x": 359,
+						"y": 728,
+						"w": 28,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiWalkUp24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 28,
+						"h": 70
+					},
+					"frame": {
+						"x": 389,
+						"y": 728,
+						"w": 28,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiWalkUp23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 28,
+						"h": 70
+					},
+					"frame": {
+						"x": 419,
+						"y": 728,
+						"w": 28,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiWalkUp2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 28,
+						"h": 70
+					},
+					"frame": {
+						"x": 449,
+						"y": 728,
+						"w": 28,
+						"h": 70
+					}
+				},
+				{
+					"filename": "samuraiDying36.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 55,
+						"w": 80,
+						"h": 71
+					},
+					"frame": {
+						"x": 479,
+						"y": 728,
+						"w": 80,
+						"h": 71
+					}
+				},
+				{
+					"filename": "samuraiDying35.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 55,
+						"w": 80,
+						"h": 71
+					},
+					"frame": {
+						"x": 561,
+						"y": 728,
+						"w": 80,
+						"h": 71
+					}
+				},
+				{
+					"filename": "samuraiAttackUp6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 31,
+						"y": 32,
+						"w": 50,
+						"h": 71
+					},
+					"frame": {
+						"x": 643,
+						"y": 728,
+						"w": 50,
+						"h": 71
+					}
+				},
+				{
+					"filename": "samuraiAttackDown15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 41,
+						"w": 61,
+						"h": 71
+					},
+					"frame": {
+						"x": 695,
+						"y": 728,
+						"w": 61,
+						"h": 71
+					}
+				},
+				{
+					"filename": "samuraiDying41.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 55,
+						"w": 79,
+						"h": 71
+					},
+					"frame": {
+						"x": 758,
+						"y": 728,
+						"w": 79,
+						"h": 71
+					}
+				},
+				{
+					"filename": "samuraiDying42.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 79,
+						"h": 72
+					},
+					"frame": {
+						"x": 839,
+						"y": 728,
+						"w": 79,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying39.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 78,
+						"h": 72
+					},
+					"frame": {
+						"x": 920,
+						"y": 728,
+						"w": 78,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 48,
+						"w": 55,
+						"h": 72
+					},
+					"frame": {
+						"x": 1,
+						"y": 802,
+						"w": 55,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying40.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 54,
+						"w": 77,
+						"h": 72
+					},
+					"frame": {
+						"x": 58,
+						"y": 802,
+						"w": 77,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying46.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 54,
+						"w": 78,
+						"h": 72
+					},
+					"frame": {
+						"x": 137,
+						"y": 802,
+						"w": 78,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying47.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 54,
+						"w": 77,
+						"h": 72
+					},
+					"frame": {
+						"x": 217,
+						"y": 802,
+						"w": 77,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying43.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 79,
+						"h": 72
+					},
+					"frame": {
+						"x": 296,
+						"y": 802,
+						"w": 79,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying34.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 55,
+						"w": 79,
+						"h": 72
+					},
+					"frame": {
+						"x": 377,
+						"y": 802,
+						"w": 79,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiAttackRight4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 27,
+						"w": 83,
+						"h": 72
+					},
+					"frame": {
+						"x": 458,
+						"y": 802,
+						"w": 83,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiAttackUp20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 32,
+						"w": 32,
+						"h": 72
+					},
+					"frame": {
+						"x": 543,
+						"y": 802,
+						"w": 32,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying33.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 55,
+						"w": 78,
+						"h": 72
+					},
+					"frame": {
+						"x": 577,
+						"y": 802,
+						"w": 78,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 79,
+						"h": 72
+					},
+					"frame": {
+						"x": 657,
+						"y": 802,
+						"w": 79,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying31.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 79,
+						"h": 72
+					},
+					"frame": {
+						"x": 738,
+						"y": 802,
+						"w": 79,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying32.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 79,
+						"h": 72
+					},
+					"frame": {
+						"x": 819,
+						"y": 802,
+						"w": 79,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying30.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 79,
+						"h": 72
+					},
+					"frame": {
+						"x": 900,
+						"y": 802,
+						"w": 79,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying37.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 80,
+						"h": 72
+					},
+					"frame": {
+						"x": 1,
+						"y": 876,
+						"w": 80,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiDying28.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 78,
+						"h": 72
+					},
+					"frame": {
+						"x": 83,
+						"y": 876,
+						"w": 78,
+						"h": 72
+					}
+				},
+				{
+					"filename": "samuraiAttackDown8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 52,
+						"w": 80,
+						"h": 73
+					},
+					"frame": {
+						"x": 163,
+						"y": 876,
+						"w": 80,
+						"h": 73
+					}
+				},
+				{
+					"filename": "samuraiAttackDown9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 52,
+						"w": 80,
+						"h": 73
+					},
+					"frame": {
+						"x": 245,
+						"y": 876,
+						"w": 80,
+						"h": 73
+					}
+				},
+				{
+					"filename": "samuraiDying38.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 80,
+						"h": 73
+					},
+					"frame": {
+						"x": 327,
+						"y": 876,
+						"w": 80,
+						"h": 73
+					}
+				},
+				{
+					"filename": "samuraiDying44.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 53,
+						"w": 79,
+						"h": 73
+					},
+					"frame": {
+						"x": 409,
+						"y": 876,
+						"w": 79,
+						"h": 73
+					}
+				},
+				{
+					"filename": "samuraiDying29.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 54,
+						"w": 79,
+						"h": 73
+					},
+					"frame": {
+						"x": 490,
+						"y": 876,
+						"w": 79,
+						"h": 73
+					}
+				},
+				{
+					"filename": "samuraiDying45.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 53,
+						"w": 79,
+						"h": 73
+					},
+					"frame": {
+						"x": 571,
+						"y": 876,
+						"w": 79,
+						"h": 73
+					}
+				},
+				{
+					"filename": "samuraiAttackUp11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 31,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 652,
+						"y": 876,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackUp10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 31,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 734,
+						"y": 876,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackUp12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 31,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 816,
+						"y": 876,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackUp13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 31,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 898,
+						"y": 876,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackUp16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 31,
+						"w": 36,
+						"h": 74
+					},
+					"frame": {
+						"x": 980,
+						"y": 876,
+						"w": 36,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackDown10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 52,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 1,
+						"y": 952,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackUp9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 31,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 83,
+						"y": 952,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackUp8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 31,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 165,
+						"y": 952,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackUp14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 31,
+						"w": 81,
+						"h": 74
+					},
+					"frame": {
+						"x": 247,
+						"y": 952,
+						"w": 81,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackUp19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 32,
+						"w": 35,
+						"h": 74
+					},
+					"frame": {
+						"x": 330,
+						"y": 952,
+						"w": 35,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackDown12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 52,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 367,
+						"y": 952,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiAttackDown11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 52,
+						"w": 80,
+						"h": 74
+					},
+					"frame": {
+						"x": 449,
+						"y": 952,
+						"w": 80,
+						"h": 74
+					}
+				},
+				{
+					"filename": "samuraiStanding19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 20,
+						"w": 72,
+						"h": 75
+					},
+					"frame": {
+						"x": 531,
+						"y": 952,
+						"w": 72,
+						"h": 75
+					}
+				},
+				{
+					"filename": "samuraiAttackUp17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 30,
+						"w": 35,
+						"h": 75
+					},
+					"frame": {
+						"x": 605,
+						"y": 952,
+						"w": 35,
+						"h": 75
+					}
+				},
+				{
+					"filename": "samuraiAttackUp18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 31,
+						"w": 35,
+						"h": 75
+					},
+					"frame": {
+						"x": 642,
+						"y": 952,
+						"w": 35,
+						"h": 75
+					}
+				},
+				{
+					"filename": "samuraiAttackDown13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 52,
+						"w": 80,
+						"h": 76
+					},
+					"frame": {
+						"x": 679,
+						"y": 952,
+						"w": 80,
+						"h": 76
+					}
+				},
+				{
+					"filename": "samuraiAttackDown14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 37,
+						"y": 52,
+						"w": 81,
+						"h": 76
+					},
+					"frame": {
+						"x": 761,
+						"y": 952,
+						"w": 81,
+						"h": 76
+					}
+				},
+				{
+					"filename": "samuraiAttackDown7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 51,
+						"w": 38,
+						"h": 77
+					},
+					"frame": {
+						"x": 844,
+						"y": 952,
+						"w": 38,
+						"h": 77
+					}
+				},
+				{
+					"filename": "samuraiAttackLeft14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 40,
+						"w": 85,
+						"h": 77
+					},
+					"frame": {
+						"x": 884,
+						"y": 952,
+						"w": 85,
+						"h": 77
+					}
+				},
+				{
+					"filename": "samuraiAttackUp15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 28,
+						"w": 61,
+						"h": 77
+					},
+					"frame": {
+						"x": 1,
+						"y": 1031,
+						"w": 61,
+						"h": 77
+					}
+				},
+				{
+					"filename": "samuraiAttackRight15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 27,
+						"w": 69,
+						"h": 77
+					},
+					"frame": {
+						"x": 64,
+						"y": 1031,
+						"w": 69,
+						"h": 77
+					}
+				},
+				{
+					"filename": "samuraiDying8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 43,
+						"w": 43,
+						"h": 77
+					},
+					"frame": {
+						"x": 135,
+						"y": 1031,
+						"w": 43,
+						"h": 77
+					}
+				},
+				{
+					"filename": "samuraiDying2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 11,
+						"w": 53,
+						"h": 83
+					},
+					"frame": {
+						"x": 180,
+						"y": 1031,
+						"w": 53,
+						"h": 83
+					}
+				},
+				{
+					"filename": "samuraiAttackRight8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 42,
+						"w": 128,
+						"h": 83
+					},
+					"frame": {
+						"x": 235,
+						"y": 1031,
+						"w": 128,
+						"h": 83
+					}
+				},
+				{
+					"filename": "samuraiAttackRight11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 42,
+						"w": 80,
+						"h": 84
+					},
+					"frame": {
+						"x": 365,
+						"y": 1031,
+						"w": 80,
+						"h": 84
+					}
+				},
+				{
+					"filename": "samuraiAttackRight12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 42,
+						"w": 79,
+						"h": 84
+					},
+					"frame": {
+						"x": 447,
+						"y": 1031,
+						"w": 79,
+						"h": 84
+					}
+				},
+				{
+					"filename": "samuraiAttackRight13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 42,
+						"w": 78,
+						"h": 85
+					},
+					"frame": {
+						"x": 528,
+						"y": 1031,
+						"w": 78,
+						"h": 85
+					}
+				},
+				{
+					"filename": "samuraiAttackRight9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 42,
+						"w": 83,
+						"h": 85
+					},
+					"frame": {
+						"x": 608,
+						"y": 1031,
+						"w": 83,
+						"h": 85
+					}
+				},
+				{
+					"filename": "samuraiAttackRight10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 42,
+						"w": 81,
+						"h": 85
+					},
+					"frame": {
+						"x": 693,
+						"y": 1031,
+						"w": 81,
+						"h": 85
+					}
+				},
+				{
+					"filename": "samuraiAttackDown6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 20,
+						"w": 51,
+						"h": 87
+					},
+					"frame": {
+						"x": 776,
+						"y": 1031,
+						"w": 51,
+						"h": 87
+					}
+				},
+				{
+					"filename": "samuraiAttackRight7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 40,
+						"w": 85,
+						"h": 88
+					},
+					"frame": {
+						"x": 829,
+						"y": 1031,
+						"w": 85,
+						"h": 88
+					}
+				},
+				{
+					"filename": "samuraiDying5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 37,
+						"y": 23,
+						"w": 52,
+						"h": 88
+					},
+					"frame": {
+						"x": 916,
+						"y": 1031,
+						"w": 52,
+						"h": 88
+					}
+				},
+				{
+					"filename": "samuraiDying7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 31,
+						"w": 41,
+						"h": 88
+					},
+					"frame": {
+						"x": 970,
+						"y": 1031,
+						"w": 41,
+						"h": 88
+					}
+				},
+				{
+					"filename": "samuraiStanding20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 8,
+						"w": 56,
+						"h": 90
+					},
+					"frame": {
+						"x": 1,
+						"y": 1121,
+						"w": 56,
+						"h": 90
+					}
+				},
+				{
+					"filename": "samuraiAttackDown16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 18,
+						"w": 36,
+						"h": 94
+					},
+					"frame": {
+						"x": 59,
+						"y": 1121,
+						"w": 36,
+						"h": 94
+					}
+				},
+				{
+					"filename": "samuraiWalkDown18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 2,
+						"w": 27,
+						"h": 95
+					},
+					"frame": {
+						"x": 97,
+						"y": 1121,
+						"w": 27,
+						"h": 95
+					}
+				},
+				{
+					"filename": "samuraiAttackDown21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 1,
+						"w": 27,
+						"h": 95
+					},
+					"frame": {
+						"x": 126,
+						"y": 1121,
+						"w": 27,
+						"h": 95
+					}
+				},
+				{
+					"filename": "samuraiWalkDown7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 2,
+						"w": 27,
+						"h": 95
+					},
+					"frame": {
+						"x": 155,
+						"y": 1121,
+						"w": 27,
+						"h": 95
+					}
+				},
+				{
+					"filename": "samuraiWalkDown17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 2,
+						"w": 27,
+						"h": 96
+					},
+					"frame": {
+						"x": 184,
+						"y": 1121,
+						"w": 27,
+						"h": 96
+					}
+				},
+				{
+					"filename": "samuraiWalkDown6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 2,
+						"w": 27,
+						"h": 96
+					},
+					"frame": {
+						"x": 213,
+						"y": 1121,
+						"w": 27,
+						"h": 96
+					}
+				},
+				{
+					"filename": "samuraiWalkDown19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 2,
+						"w": 27,
+						"h": 96
+					},
+					"frame": {
+						"x": 242,
+						"y": 1121,
+						"w": 27,
+						"h": 96
+					}
+				},
+				{
+					"filename": "samuraiAttackDown22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 1,
+						"w": 25,
+						"h": 96
+					},
+					"frame": {
+						"x": 271,
+						"y": 1121,
+						"w": 25,
+						"h": 96
+					}
+				},
+				{
+					"filename": "samuraiDying6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 21,
+						"w": 41,
+						"h": 97
+					},
+					"frame": {
+						"x": 298,
+						"y": 1121,
+						"w": 41,
+						"h": 97
+					}
+				},
+				{
+					"filename": "samuraiWalkDown8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 2,
+						"w": 27,
+						"h": 97
+					},
+					"frame": {
+						"x": 341,
+						"y": 1121,
+						"w": 27,
+						"h": 97
+					}
+				},
+				{
+					"filename": "samuraiWalkDown5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 2,
+						"w": 27,
+						"h": 97
+					},
+					"frame": {
+						"x": 370,
+						"y": 1121,
+						"w": 27,
+						"h": 97
+					}
+				},
+				{
+					"filename": "samuraiWalkDown16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 98
+					},
+					"frame": {
+						"x": 399,
+						"y": 1121,
+						"w": 25,
+						"h": 98
+					}
+				},
+				{
+					"filename": "samuraiWalkDown20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 2,
+						"w": 27,
+						"h": 98
+					},
+					"frame": {
+						"x": 426,
+						"y": 1121,
+						"w": 27,
+						"h": 98
+					}
+				},
+				{
+					"filename": "samuraiWalkDown9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 98
+					},
+					"frame": {
+						"x": 455,
+						"y": 1121,
+						"w": 25,
+						"h": 98
+					}
+				},
+				{
+					"filename": "samuraiStanding21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 3,
+						"w": 38,
+						"h": 98
+					},
+					"frame": {
+						"x": 482,
+						"y": 1121,
+						"w": 38,
+						"h": 98
+					}
+				},
+				{
+					"filename": "samuraiWalkDown21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 28,
+						"h": 99
+					},
+					"frame": {
+						"x": 522,
+						"y": 1121,
+						"w": 28,
+						"h": 99
+					}
+				},
+				{
+					"filename": "samuraiWalkDown4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 28,
+						"h": 99
+					},
+					"frame": {
+						"x": 552,
+						"y": 1121,
+						"w": 28,
+						"h": 99
+					}
+				},
+				{
+					"filename": "samuraiWalkDown15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 99
+					},
+					"frame": {
+						"x": 582,
+						"y": 1121,
+						"w": 25,
+						"h": 99
+					}
+				},
+				{
+					"filename": "samuraiWalkDown22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 28,
+						"h": 100
+					},
+					"frame": {
+						"x": 609,
+						"y": 1121,
+						"w": 28,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiAttackDown5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 0,
+						"w": 30,
+						"h": 100
+					},
+					"frame": {
+						"x": 639,
+						"y": 1121,
+						"w": 30,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiWalkDown10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 100
+					},
+					"frame": {
+						"x": 671,
+						"y": 1121,
+						"w": 25,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiAttackDown23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 1,
+						"w": 25,
+						"h": 100
+					},
+					"frame": {
+						"x": 698,
+						"y": 1121,
+						"w": 25,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiWalkDown3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 28,
+						"h": 100
+					},
+					"frame": {
+						"x": 725,
+						"y": 1121,
+						"w": 28,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiAttackDown1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 100
+					},
+					"frame": {
+						"x": 755,
+						"y": 1121,
+						"w": 25,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiStanding22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 2,
+						"w": 29,
+						"h": 100
+					},
+					"frame": {
+						"x": 782,
+						"y": 1121,
+						"w": 29,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiWalkDown14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 100
+					},
+					"frame": {
+						"x": 813,
+						"y": 1121,
+						"w": 25,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiWalkDown13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 100
+					},
+					"frame": {
+						"x": 840,
+						"y": 1121,
+						"w": 25,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiAttackDown24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 100
+					},
+					"frame": {
+						"x": 867,
+						"y": 1121,
+						"w": 25,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiWalkDown11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 100
+					},
+					"frame": {
+						"x": 894,
+						"y": 1121,
+						"w": 25,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiWalkDown12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 2,
+						"w": 25,
+						"h": 100
+					},
+					"frame": {
+						"x": 921,
+						"y": 1121,
+						"w": 25,
+						"h": 100
+					}
+				},
+				{
+					"filename": "samuraiStanding23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 28,
+						"h": 101
+					},
+					"frame": {
+						"x": 948,
+						"y": 1121,
+						"w": 28,
+						"h": 101
+					}
+				},
+				{
+					"filename": "samuraiWalkDown24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 29,
+						"h": 101
+					},
+					"frame": {
+						"x": 978,
+						"y": 1121,
+						"w": 29,
+						"h": 101
+					}
+				},
+				{
+					"filename": "samuraiWalkDown23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 28,
+						"h": 101
+					},
+					"frame": {
+						"x": 1,
+						"y": 1224,
+						"w": 28,
+						"h": 101
+					}
+				},
+				{
+					"filename": "samuraiStanding24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 28,
+						"h": 101
+					},
+					"frame": {
+						"x": 31,
+						"y": 1224,
+						"w": 28,
+						"h": 101
+					}
+				},
+				{
+					"filename": "samuraiWalkDown1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 29,
+						"h": 101
+					},
+					"frame": {
+						"x": 61,
+						"y": 1224,
+						"w": 29,
+						"h": 101
+					}
+				},
+				{
+					"filename": "samuraiDying1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 29,
+						"h": 101
+					},
+					"frame": {
+						"x": 92,
+						"y": 1224,
+						"w": 29,
+						"h": 101
+					}
+				},
+				{
+					"filename": "samuraiWalkDown2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 2,
+						"w": 28,
+						"h": 101
+					},
+					"frame": {
+						"x": 123,
+						"y": 1224,
+						"w": 28,
+						"h": 101
+					}
+				},
+				{
+					"filename": "samuraiAttackDown2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 0,
+						"w": 25,
+						"h": 103
+					},
+					"frame": {
+						"x": 153,
+						"y": 1224,
+						"w": 25,
+						"h": 103
+					}
+				},
+				{
+					"filename": "samuraiAttackDown3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 50,
+						"y": 0,
+						"w": 26,
+						"h": 105
+					},
+					"frame": {
+						"x": 180,
+						"y": 1224,
+						"w": 26,
+						"h": 105
+					}
+				},
+				{
+					"filename": "samuraiAttackUp7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 0,
+						"w": 38,
+						"h": 105
+					},
+					"frame": {
+						"x": 208,
+						"y": 1224,
+						"w": 38,
+						"h": 105
+					}
+				},
+				{
+					"filename": "samuraiAttackDown20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 1,
+						"w": 32,
+						"h": 106
+					},
+					"frame": {
+						"x": 248,
+						"y": 1224,
+						"w": 32,
+						"h": 106
+					}
+				},
+				{
+					"filename": "samuraiAttackDown17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 6,
+						"w": 35,
+						"h": 106
+					},
+					"frame": {
+						"x": 282,
+						"y": 1224,
+						"w": 35,
+						"h": 106
+					}
+				},
+				{
+					"filename": "samuraiAttackDown18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 2,
+						"w": 35,
+						"h": 110
+					},
+					"frame": {
+						"x": 319,
+						"y": 1224,
+						"w": 35,
+						"h": 110
+					}
+				},
+				{
+					"filename": "samuraiAttackDown19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 1,
+						"w": 35,
+						"h": 111
+					},
+					"frame": {
+						"x": 356,
+						"y": 1224,
+						"w": 35,
+						"h": 111
+					}
+				},
+				{
+					"filename": "samuraiAttackDown4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 0,
+						"w": 51,
+						"h": 128
+					},
+					"frame": {
+						"x": 393,
+						"y": 1224,
+						"w": 51,
+						"h": 128
 					}
 				}
 			]
@@ -5559,6 +5559,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:97f8eee1f822516c0f0301a3b0cfecd1:20000611091797d3ccf87e4bfc7fbd90:6fb61cf866bee6099f5558d2244bcac5$"
+		"smartupdate": "$TexturePacker:SmartUpdate:f0382ebd53029ab016ba9e4ded38279f:889b32326c669215e3848d25b532d8fe:c8b642d50fe441897bcf89bb0de37fb9$"
 	}
 }
