@@ -164,6 +164,8 @@ class ActionScene extends Phaser.Scene {
         this.diceThrow = this.physics.add.sprite(100, 100, 'diceRoll', 'diceRolling73.png');
         this.diceThrow.setInteractive();
         this.diceThrow.on('pointerdown', this.doRandomThrow, this);
+        
+
     }
 
     update() {
@@ -199,10 +201,11 @@ class ActionScene extends Phaser.Scene {
             samurai.isSamurai = true;
             samurai.isChosen = false;
             this.playersFigures.push(samurai);
-            // this.classSamurai = new Phaser.GameObjects.Sprite (this, 1220, 120, 'samurai', 'samuraiStanding08.png');
-            // this.classSamurai.addToDisplayList();
         }
+        // this.classSamurai = new Phaser.GameObjects.Sprite (this, 1220, 120, 'samurai', 'samuraiStanding08.png');
+        // this.classSamurai.addToDisplayList();
     }
+
 
     createAnimations() {
         this.anims.create({
@@ -254,16 +257,13 @@ class ActionScene extends Phaser.Scene {
         samurai.setTint(samurai.colorId);
         this.pointer.leftButtonDown();
         samurai.setInteractive();
-
         let isPointerOverSamurai = this.pointerTileX === Phaser.Math.FloorTo(samurai.x / 64) && this.pointerTileY === Phaser.Math.FloorTo(samurai.y / 64);
         if (isPointerOverSamurai) {
-
             samurai.setTint(0xffffff);
             if (samurai.teamId === this.gamePhaseNow) {
                 if (this.pointer.isDown) {
                     samurai.isChosen = true;
                     samurai.setAlpha(0.3);
-                    console.log(this.gamePhaseNow);
                     if (this.currentTile) {
                         this.startTileNumber = this.currentTile.properties.number;
                     }
@@ -277,7 +277,7 @@ class ActionScene extends Phaser.Scene {
         }
         if (samurai.isChosen) {
             this.doStartPath(samurai);
-        }
+        } 
     }
 
     hoverCurrentTile() {
@@ -290,20 +290,19 @@ class ActionScene extends Phaser.Scene {
 
     doStartPath(target) {
         if (target.isChosen) {
-            if (target.teamId === this.gamePhaseNow) {
-                if (this.pointer.rightButtonDown()) {
-                    if (this.currentTile) {
-                        console.log()
-                        this.endTile = this.currentTile;
-                        this.endTileNumber = this.endTile.properties.number;
-                        this.checkMoveDistance(target);
-                        if (this.diceResult1 === 0 && this.diceResult2 === 0) {
-                            this.takeTurnToNext();
-                        }
-                        target.isChosen = false;
+
+            if (this.pointer.rightButtonDown()) {
+                if (this.currentTile) {
+                    this.endTile = this.currentTile;
+                    this.endTileNumber = this.endTile.properties.number;
+                    this.checkMoveDistance(target);
+                    if (this.diceResult1 === 0 && this.diceResult2 === 0) {
+                        this.takeTurnToNext();
                     }
+                    target.isChosen = false;
                 }
             }
+
         }
     }
 
@@ -408,22 +407,26 @@ class ActionScene extends Phaser.Scene {
         } else {
             emptyResult = 0;
         }
-        if ((moveDistance === this.diceResult1 || moveDistance === this.diceResult2) && this.endTileNumber > this.startTileNumber) {
+        if (moveDistance === this.diceResult1 || moveDistance === this.diceResult2) {
             this.tweenMaker(target, this.endTile, this.endTileNumber);
             switch (moveDistance) {
                 case this.diceResult1:
                     this.diceResult1 = emptyResult;
-                    this.diceDisplayed1.setAlpha(0.5);
+                    if (this.diceDisplayed1) {
+                        this.diceDisplayed1.setAlpha(0.5);
+                    }
                     break;
                 case this.diceResult2:
                     this.diceResult2 = emptyResult;
-                    this.diceDisplayed2.setAlpha(0.5);
+                    if (this.diceDisplayed2) {
+                        this.diceDisplayed2.setAlpha(0.5);
+                    }
                     break;
             }
         }
         if (this.startTileNumber > 50 && (this.endTileNumber < 7 && this.endTileNumber !== 0)) {
             let newLapCheck = this.endTileNumber + 56;
-            if (newLapCheck - this.startTileNumber <= this.diceResult1) {
+            if (newLapCheck - this.startTileNumber === this.diceResult1 || newLapCheck - this.startTileNumber === this.diceResult2) {
                 this.tweenMaker(target, this.endTile, newLapCheck);
                 moveDistance = newLapCheck - this.startTileNumber;
                 switch (moveDistance) {
