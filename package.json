@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "ParchesGame",
+  "version": "1.0.0",
+  "main": "ActionScene.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlterDenied/ParchesGame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlterDenied/ParchesGame/issues"
+  },
+  "homepage": "https://github.com/AlterDenied/ParchesGame#readme",
+  "description": ""
+}

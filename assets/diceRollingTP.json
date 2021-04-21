@@ -1,1703 +1,1751 @@
 {
   "frames": {
-    "floorTilesTP.png": {
+    "diceRolling1.png": {
       "frame": {
         "x": 0,
         "y": 0,
-        "w": 256,
-        "h": 1088
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 256,
-        "h": 1088
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 256,
-        "h": 1088
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_01.png": {
+    "diceRolling10.png": {
       "frame": {
-        "x": 0,
-        "y": 1088,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 0,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_02.png": {
+    "diceRolling11.png": {
       "frame": {
-        "x": 0,
-        "y": 1152,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 0,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_03.png": {
+    "diceRolling12.png": {
       "frame": {
-        "x": 0,
-        "y": 1216,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 0,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_04.png": {
+    "diceRolling13.png": {
       "frame": {
-        "x": 0,
-        "y": 1280,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 0,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_05.png": {
+    "diceRolling14.png": {
       "frame": {
-        "x": 0,
-        "y": 1344,
-        "w": 64,
-        "h": 64
+        "x": 1250,
+        "y": 0,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_06.png": {
+    "diceRolling15.png": {
       "frame": {
+        "x": 1500,
+        "y": 0,
+        "w": 250,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
         "x": 0,
-        "y": 1408,
-        "w": 64,
-        "h": 64
+        "y": 0,
+        "w": 250,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 188
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "diceRolling16.png": {
+      "frame": {
+        "x": 1750,
+        "y": 0,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_07.png": {
+    "diceRolling17.png": {
       "frame": {
         "x": 0,
-        "y": 1472,
-        "w": 64,
-        "h": 64
+        "y": 188,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_08.png": {
+    "diceRolling18.png": {
       "frame": {
         "x": 0,
-        "y": 1536,
-        "w": 64,
-        "h": 64
+        "y": 376,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_09.png": {
+    "diceRolling19.png": {
       "frame": {
         "x": 0,
-        "y": 1600,
-        "w": 64,
-        "h": 64
+        "y": 564,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_10.png": {
+    "diceRolling2.png": {
       "frame": {
         "x": 0,
-        "y": 1664,
-        "w": 64,
-        "h": 64
+        "y": 752,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_11.png": {
+    "diceRolling20.png": {
       "frame": {
         "x": 0,
-        "y": 1728,
-        "w": 64,
-        "h": 64
+        "y": 940,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_12.png": {
+    "diceRolling21.png": {
       "frame": {
         "x": 0,
-        "y": 1792,
-        "w": 64,
-        "h": 64
+        "y": 1128,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_13.png": {
+    "diceRolling22.png": {
       "frame": {
         "x": 0,
-        "y": 1856,
-        "w": 64,
-        "h": 64
+        "y": 1316,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_14.png": {
+    "diceRolling23.png": {
       "frame": {
         "x": 0,
-        "y": 1920,
-        "w": 64,
-        "h": 64
+        "y": 1504,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_15.png": {
+    "diceRolling24.png": {
       "frame": {
         "x": 0,
-        "y": 1984,
-        "w": 64,
-        "h": 64
+        "y": 1692,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "blueShitTiles_16.png": {
+    "diceRolling25.png": {
       "frame": {
-        "x": 64,
-        "y": 1088,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 188,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "bridge horizontal.png": {
+    "diceRolling26.png": {
       "frame": {
-        "x": 64,
-        "y": 1152,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 188,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "bridge transparent.png": {
+    "diceRolling27.png": {
       "frame": {
-        "x": 64,
-        "y": 1216,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 188,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_01.png": {
+    "diceRolling28.png": {
       "frame": {
-        "x": 64,
-        "y": 1280,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 188,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_02.png": {
+    "diceRolling29.png": {
       "frame": {
-        "x": 64,
-        "y": 1344,
-        "w": 64,
-        "h": 64
+        "x": 1250,
+        "y": 188,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_03.png": {
+    "diceRolling3.png": {
       "frame": {
-        "x": 64,
-        "y": 1408,
-        "w": 64,
-        "h": 64
+        "x": 1500,
+        "y": 188,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_04.png": {
+    "diceRolling30.png": {
       "frame": {
-        "x": 64,
-        "y": 1472,
-        "w": 64,
-        "h": 64
+        "x": 1750,
+        "y": 188,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_05.png": {
+    "diceRolling31.png": {
       "frame": {
-        "x": 64,
-        "y": 1536,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 376,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_06.png": {
+    "diceRolling32.png": {
       "frame": {
-        "x": 64,
-        "y": 1600,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 564,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_07.png": {
+    "diceRolling33.png": {
       "frame": {
-        "x": 64,
-        "y": 1664,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 752,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_08.png": {
+    "diceRolling34.png": {
       "frame": {
-        "x": 64,
-        "y": 1728,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 940,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_09.png": {
+    "diceRolling35.png": {
       "frame": {
-        "x": 64,
-        "y": 1792,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 1128,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_10.png": {
+    "diceRolling36.png": {
       "frame": {
-        "x": 64,
-        "y": 1856,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 1316,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_11.png": {
+    "diceRolling37.png": {
       "frame": {
-        "x": 64,
-        "y": 1920,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 1504,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_12.png": {
+    "diceRolling38.png": {
       "frame": {
-        "x": 64,
-        "y": 1984,
-        "w": 64,
-        "h": 64
+        "x": 250,
+        "y": 1692,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_13.png": {
+    "diceRolling39.png": {
       "frame": {
-        "x": 128,
-        "y": 1088,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 376,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_14.png": {
+    "diceRolling4.png": {
       "frame": {
-        "x": 128,
-        "y": 1152,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 376,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_15.png": {
+    "diceRolling40.png": {
       "frame": {
-        "x": 128,
-        "y": 1216,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 376,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "greenShitTiles_16.png": {
+    "diceRolling41.png": {
       "frame": {
-        "x": 128,
-        "y": 1280,
-        "w": 64,
-        "h": 64
+        "x": 1250,
+        "y": 376,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "jumperTile — копия — копия — копия.png": {
+    "diceRolling42.png": {
       "frame": {
-        "x": 128,
-        "y": 1344,
-        "w": 64,
-        "h": 64
+        "x": 1500,
+        "y": 376,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "jumperTile — копия — копия.png": {
+    "diceRolling43.png": {
       "frame": {
-        "x": 128,
-        "y": 1408,
-        "w": 64,
-        "h": 64
+        "x": 1750,
+        "y": 376,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "jumperTile — копия.png": {
+    "diceRolling44.png": {
       "frame": {
-        "x": 128,
-        "y": 1472,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 564,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "jumperTile.png": {
+    "diceRolling45.png": {
       "frame": {
-        "x": 128,
-        "y": 1536,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 564,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_01.png": {
+    "diceRolling46.png": {
       "frame": {
-        "x": 128,
-        "y": 1600,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 564,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_02.png": {
+    "diceRolling47.png": {
       "frame": {
-        "x": 128,
-        "y": 1664,
-        "w": 64,
-        "h": 64
+        "x": 1250,
+        "y": 564,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_03.png": {
+    "diceRolling48.png": {
       "frame": {
-        "x": 128,
-        "y": 1728,
-        "w": 64,
-        "h": 64
+        "x": 1500,
+        "y": 564,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_04.png": {
+    "diceRolling49.png": {
       "frame": {
-        "x": 128,
-        "y": 1792,
-        "w": 64,
-        "h": 64
+        "x": 1750,
+        "y": 564,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_05.png": {
+    "diceRolling5.png": {
       "frame": {
-        "x": 128,
-        "y": 1856,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 752,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_06.png": {
+    "diceRolling50.png": {
       "frame": {
-        "x": 128,
-        "y": 1920,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 940,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_07.png": {
+    "diceRolling51.png": {
       "frame": {
-        "x": 128,
-        "y": 1984,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 1128,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_08.png": {
+    "diceRolling52.png": {
       "frame": {
-        "x": 192,
-        "y": 1088,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 1316,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_09.png": {
+    "diceRolling53.png": {
       "frame": {
-        "x": 192,
-        "y": 1152,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 1504,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_10.png": {
+    "diceRolling54.png": {
       "frame": {
-        "x": 192,
-        "y": 1216,
-        "w": 64,
-        "h": 64
+        "x": 500,
+        "y": 1692,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_11.png": {
+    "diceRolling55.png": {
       "frame": {
-        "x": 192,
-        "y": 1280,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 752,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_12.png": {
+    "diceRolling56.png": {
       "frame": {
-        "x": 192,
-        "y": 1344,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 752,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_13.png": {
+    "diceRolling57.png": {
       "frame": {
-        "x": 192,
-        "y": 1408,
-        "w": 64,
-        "h": 64
+        "x": 1250,
+        "y": 752,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_14.png": {
+    "diceRolling58.png": {
       "frame": {
-        "x": 192,
-        "y": 1472,
-        "w": 64,
-        "h": 64
+        "x": 1500,
+        "y": 752,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_15.png": {
+    "diceRolling59.png": {
       "frame": {
-        "x": 192,
-        "y": 1536,
-        "w": 64,
-        "h": 64
+        "x": 1750,
+        "y": 752,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "redShitTiles_16.png": {
+    "diceRolling6.png": {
       "frame": {
-        "x": 192,
-        "y": 1600,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 940,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_01.png": {
+    "diceRolling60.png": {
       "frame": {
-        "x": 192,
-        "y": 1664,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 1128,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_02.png": {
+    "diceRolling61.png": {
       "frame": {
-        "x": 192,
-        "y": 1728,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 1316,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_03.png": {
+    "diceRolling62.png": {
       "frame": {
-        "x": 192,
-        "y": 1792,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 1504,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_04.png": {
+    "diceRolling63.png": {
       "frame": {
-        "x": 192,
-        "y": 1856,
-        "w": 64,
-        "h": 64
+        "x": 750,
+        "y": 1692,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_05.png": {
+    "diceRolling64.png": {
       "frame": {
-        "x": 192,
-        "y": 1920,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 940,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_06.png": {
+    "diceRolling65.png": {
       "frame": {
-        "x": 192,
-        "y": 1984,
-        "w": 64,
-        "h": 64
+        "x": 1250,
+        "y": 940,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_07.png": {
+    "diceRolling66.png": {
       "frame": {
-        "x": 256,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1500,
+        "y": 940,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_08.png": {
+    "diceRolling67.png": {
       "frame": {
-        "x": 320,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1750,
+        "y": 940,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_09.png": {
+    "diceRolling68.png": {
       "frame": {
-        "x": 384,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 1128,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_10.png": {
+    "diceRolling69.png": {
       "frame": {
-        "x": 448,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 1316,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_11.png": {
+    "diceRolling7.png": {
       "frame": {
-        "x": 512,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 1504,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_12.png": {
+    "diceRolling70.png": {
       "frame": {
-        "x": 576,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1000,
+        "y": 1692,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_13.png": {
+    "diceRolling71.png": {
       "frame": {
-        "x": 640,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1250,
+        "y": 1128,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_14.png": {
+    "diceRolling72.png": {
       "frame": {
-        "x": 704,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1500,
+        "y": 1128,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_15.png": {
+    "diceRolling73.png": {
       "frame": {
-        "x": 768,
-        "y": 0,
-        "w": 64,
-        "h": 64
+        "x": 1750,
+        "y": 1128,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "yellowShitTiles_16.png": {
+    "diceRolling8.png": {
       "frame": {
-        "x": 832,
+        "x": 1250,
+        "y": 1316,
+        "w": 250,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 188
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "diceRolling9.png": {
+      "frame": {
+        "x": 1500,
+        "y": 1316,
+        "w": 250,
+        "h": 188
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "sourceSize": {
-        "w": 64,
-        "h": 64
+        "w": 250,
+        "h": 188
       },
       "pivot": {
         "x": 0.5,
@@ -1708,10 +1756,10 @@
   "meta": {
     "app": "http://free-tex-packer.com",
     "version": "0.6.6",
-    "image": "texture.png",
+    "image": "diceRollingTP.png",
     "format": "RGBA8888",
     "size": {
-      "w": 1024,
+      "w": 2048,
       "h": 2048
     },
     "scale": 1

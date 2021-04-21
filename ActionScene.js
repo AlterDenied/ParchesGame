@@ -1,17 +1,27 @@
-class Samurai extends Phaser.GameObjects.Sprite {
-
-    constructor() {
-        super('samurai')
-    }
-}
-
 class ActionScene extends Phaser.Scene {
     startTileNumber;
     endTileNumber;
     floorMap;
     tileset;
     chipsNumber = 4;
-    players = [0, 1, 2, 3];
+    players = [
+        {
+            name: "redPlayer",
+            chipsCount: 5
+        },
+        {
+            name: "yellowPlayer",
+            chipsCount: 5
+        },
+        {
+            name: "bluePlayer",
+            chipsCount: 5
+        },
+        {
+            name: "greenPlayer",
+            chipsCount: 5
+        }
+    ];
     playerNow;
     playersCount = 4;
     playersTintColors = [
@@ -21,7 +31,7 @@ class ActionScene extends Phaser.Scene {
         },
         {
             name: 'p1',
-            color: 0x11aa55
+            color: 0xffaa33
         },
         {
             name: 'p2',
@@ -29,35 +39,38 @@ class ActionScene extends Phaser.Scene {
         },
         {
             name: 'p3',
-            color: 0xffaa33
+            color: 0x11aa55
         }
     ]
     playersFigures = [];
+    diceDisplayed1;
+    diceDisplayed2;
     diceThrow;
-    diceResult1 = 6;
-    diceResult2 = 3;
+    diceResult1 = 5;
+    diceResult2 = 999;
+    gameTurns = ["redPlayer", "yellowPlayer", "bluePlayer", "greenPlayer",];
     gamePhases = ['gameStart', 'diceThrow', 'doTurn', 'gameOver'];
-    gamePhaseNow;
+    gamePhaseNow = this.gameTurns[0];
     startTiles = [
         {
             name: 'p0',
-            tileX: 14,
-            tileY: 15
+            tileX: 13,
+            tileY: 16
         },
         {
             name: 'p1',
-            tileX: 5,
-            tileY: 10
+            tileX: 13,
+            tileY: 11
         },
         {
             name: 'p2',
-            tileX: 10,
-            tileY: 1
+            tileX: 11,
+            tileY: 0
         },
         {
             name: 'p3',
-            tileX: 19,
-            tileY: 6
+            tileX: 4,
+            tileY: 9
         }
     ];
 
@@ -133,31 +146,28 @@ class ActionScene extends Phaser.Scene {
 
     preload() {
         this.load.image('floorNameInPhaser', './assets/floorTilesTP.png');
-        this.load.image('floorNameAddedInPhaser', './assets/floorTilesAdded.png');
-        this.load.image('dice', './assets/dice.png');
+        this.load.atlas('UI', './assets/UI_TP.png', './assets/UI_TP.json');
+        this.load.atlas('diceRoll', './assets/diceRollingTP.png', './assets/diceRollingTP.json');
         this.load.tilemapTiledJSON('mapFromTiled', './assets/floorMapFromTiled.json');
         this.load.atlas('samurai', './assets/samuraiAtlas.png', './assets/samuraiAtlas.json');
     }
+
 
     create() {
         this.createAnimations();
         this.createTileMap();
         this.createSamuraiAtStartGamePhase();
 
-        this.testSamurai = this.add.sprite(300, 300, 'samurai', 'samuraiStanding8.png');
-        this.testSamurai.setTint(this.playersTintColors[0].color);
-
         this.add.text(1700, 1000, "chips: " + this.chipsNumber, {
             fontSize: 32
         });
-        this.diceThrow = this.add.image(112, 112, 'dice');
-        this.diceThrow.setScale(0.3);
+        this.diceThrow = this.physics.add.sprite(100, 100, 'diceRoll', 'diceRolling73.png');
         this.diceThrow.setInteractive();
-        this.diceThrow.on('pointerdown', this.doRandomThrow );
-        this.playersFigures[0].x -= 128;
+        this.diceThrow.on('pointerdown', this.doRandomThrow, this);
     }
 
     update() {
+
         this.pointer = this.input.activePointer;
         this.worldPoint = this.input.activePointer.positionToCamera(this.cameras.main);
         this.pointerTileX = this.floorMap.worldToTileX(this.worldPoint.x);
@@ -185,6 +195,7 @@ class ActionScene extends Phaser.Scene {
             let samurai = this.physics.add.sprite(this.startTiles[i].tileX * 64 + 28, this.startTiles[i].tileY * 64 + 16, 'samurai', 'samuraiStanding8.png');
             samurai.setTint(this.playersTintColors[i].color);
             samurai.colorId = this.playersTintColors[i].color;
+            samurai.teamId = this.players[i].name;
             samurai.isSamurai = true;
             samurai.isChosen = false;
             this.playersFigures.push(samurai);
@@ -198,36 +209,44 @@ class ActionScene extends Phaser.Scene {
             key: 'samuraiWalkUp',
             frames: this.anims.generateFrameNames('samurai', { start: 1, end: 24, prefix: 'samuraiWalkUp', suffix: '.png' }),
             repeat: -1,
-            frameRate: 120
+            frameRate: 75
         })
 
         this.anims.create({
             key: 'samuraiWalkRight',
             frames: this.anims.generateFrameNames('samurai', { start: 1, end: 24, prefix: 'samuraiWalkRight', suffix: '.png' }),
             repeat: -1,
-            frameRate: 120
+            frameRate: 75
         })
 
         this.anims.create({
             key: 'samuraiWalkLeft',
             frames: this.anims.generateFrameNames('samurai', { start: 1, end: 24, prefix: 'samuraiWalkLeft', suffix: '.png' }),
             repeat: -1,
-            frameRate: 120
+            frameRate: 75
         })
 
         this.anims.create({
             key: 'samuraiWalkDown',
             frames: this.anims.generateFrameNames('samurai', { start: 1, end: 24, prefix: 'samuraiWalkDown', suffix: '.png' }),
             repeat: -1,
-            frameRate: 120
+            frameRate: 75
         })
 
         this.anims.create({
             key: 'samuraiStanding',
             frames: this.anims.generateFrameNames('samurai', { start: 4, end: 12, prefix: 'samuraiStanding', suffix: '.png' }),
             repeat: -1,
-            repeatDelay: 300,
-            yoyo: true
+            repeatDelay: 4000,
+            yoyo: true,
+            frameRate: 20
+        })
+
+        this.anims.create({
+            key: 'diceRollThrow',
+            frames: this.anims.generateFrameNames('diceRoll', { start: 1, end: 72, prefix: 'diceRolling', suffix: '.png' }),
+            repeat: 0,
+            frameRate: 30
         })
     }
 
@@ -238,12 +257,16 @@ class ActionScene extends Phaser.Scene {
 
         let isPointerOverSamurai = this.pointerTileX === Phaser.Math.FloorTo(samurai.x / 64) && this.pointerTileY === Phaser.Math.FloorTo(samurai.y / 64);
         if (isPointerOverSamurai) {
+
             samurai.setTint(0xffffff);
-            if (this.pointer.isDown) {
-                samurai.isChosen = true;
-                samurai.setAlpha(0.3);
-                if (this.currentTile) {
-                    this.startTileNumber = this.currentTile.properties.number;
+            if (samurai.teamId === this.gamePhaseNow) {
+                if (this.pointer.isDown) {
+                    samurai.isChosen = true;
+                    samurai.setAlpha(0.3);
+                    console.log(this.gamePhaseNow);
+                    if (this.currentTile) {
+                        this.startTileNumber = this.currentTile.properties.number;
+                    }
                 }
             } else {
                 samurai.clearAlpha();
@@ -267,20 +290,18 @@ class ActionScene extends Phaser.Scene {
 
     doStartPath(target) {
         if (target.isChosen) {
-            if (this.pointer.rightButtonDown()) {
-                if (this.currentTile) {
-                    this.endTile = this.currentTile;
-                    this.endTileNumber = this.endTile.properties.number;
-                    if (this.endTileNumber - this.startTileNumber <= this.diceResult1 && this.endTileNumber > this.startTileNumber) {
-                        this.tweenMaker(target, this.endTile, this.endTileNumber);
-                    }
-                    if (this.startTileNumber > 50 && (this.endTileNumber < 7 && this.endTileNumber !== 0)) {
-                        let newLapCheck = this.endTileNumber + 56;
-                        if (newLapCheck - this.startTileNumber <= this.diceResult1) {
-                            this.tweenMaker(target, this.endTile, newLapCheck);
+            if (target.teamId === this.gamePhaseNow) {
+                if (this.pointer.rightButtonDown()) {
+                    if (this.currentTile) {
+                        console.log()
+                        this.endTile = this.currentTile;
+                        this.endTileNumber = this.endTile.properties.number;
+                        this.checkMoveDistance(target);
+                        if (this.diceResult1 === 0 && this.diceResult2 === 0) {
+                            this.takeTurnToNext();
                         }
+                        target.isChosen = false;
                     }
-                    target.isChosen = false;
                 }
             }
         }
@@ -288,14 +309,22 @@ class ActionScene extends Phaser.Scene {
 
     tweenMaker(tweenTarget, endTile, newLapCheck) {
         let timeline = this.tweens.createTimeline();
+        let durationMultiple = newLapCheck - this.startTileNumber;
         for (let i = this.startTileNumber + 1; i <= newLapCheck; i++) {
             timeline.add({
                 targets: tweenTarget,
                 x: this.tilesetArray[i].x * 64 + 28,
                 y: this.tilesetArray[i].y * 64 + 16,
-                duration: 100,
+                duration: 200,
+                totalDuration: durationMultiple,
                 onStart: () => { tweenTarget.anims.play(this.tilesetArray[i - 1].anim) },
-                onComplete: () => { tweenTarget.anims.play(this.tilesetArray[i].anim) }
+                onComplete: () => {
+                    if (i === newLapCheck) {
+                        tweenTarget.anims.play('samuraiStanding');
+                    } else {
+                        tweenTarget.anims.play(this.tilesetArray[i].anim);
+                    }
+                }
             });
         }
         if (endTile.properties.toilet) {
@@ -311,9 +340,125 @@ class ActionScene extends Phaser.Scene {
         timeline.play();
     }
 
-    doRandomThrow () {
-        this.diceResult1 = Phaser.Math.Between(1, 6);
-        this.diceResult2 = Phaser.Math.Between(1, 6);
+    doRandomThrow() {
+        if (this.diceDisplayed2 === undefined && this.diceDisplayed1 === undefined) {
+            this.diceResult1 = Phaser.Math.Between(1, 6);
+            this.diceResult2 = Phaser.Math.Between(1, 6);
+            this.diceThrow.anims.play('diceRollThrow');
+            this.displayDiceResult();
+        } else {
+            this.diceDisplayed2.destroy();
+            this.diceDisplayed1.destroy();
+            this.diceResult1 = Phaser.Math.Between(1, 6);
+            this.diceResult2 = Phaser.Math.Between(1, 6);
+            this.diceThrow.anims.play('diceRollThrow');
+            this.displayDiceResult();
+        }
+    }
+
+    displayDiceResult() {
+
+        switch (this.diceResult1) {
+            case 1:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals1.png');
+                break;
+            case 2:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals2.png');
+                break;
+            case 3:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals3.png');
+                break;
+            case 4:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals4.png');
+                break;
+            case 5:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals5.png');
+                break;
+            case 6:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals6.png');
+                break;
+        }
+        switch (this.diceResult2) {
+            case 1:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals1.png');
+                break;
+            case 2:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals2.png');
+                break;
+            case 3:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals3.png');
+                break;
+            case 4:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals4.png');
+                break;
+            case 5:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals5.png');
+                break;
+            case 6:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals6.png');
+                break;
+        }
+    }
+
+    checkMoveDistance(target) {
+        let moveDistance = this.endTileNumber - this.startTileNumber;
+        let emptyResult;
+        if (this.diceResult1 === this.diceResult2) {
+            emptyResult = -1;
+        } else {
+            emptyResult = 0;
+        }
+        if ((moveDistance === this.diceResult1 || moveDistance === this.diceResult2) && this.endTileNumber > this.startTileNumber) {
+            this.tweenMaker(target, this.endTile, this.endTileNumber);
+            switch (moveDistance) {
+                case this.diceResult1:
+                    this.diceResult1 = emptyResult;
+                    this.diceDisplayed1.setAlpha(0.5);
+                    break;
+                case this.diceResult2:
+                    this.diceResult2 = emptyResult;
+                    this.diceDisplayed2.setAlpha(0.5);
+                    break;
+            }
+        }
+        if (this.startTileNumber > 50 && (this.endTileNumber < 7 && this.endTileNumber !== 0)) {
+            let newLapCheck = this.endTileNumber + 56;
+            if (newLapCheck - this.startTileNumber <= this.diceResult1) {
+                this.tweenMaker(target, this.endTile, newLapCheck);
+                moveDistance = newLapCheck - this.startTileNumber;
+                switch (moveDistance) {
+                    case this.diceResult1:
+                        this.diceResult1 = emptyResult;
+                        if (this.diceDisplayed1) {
+                            this.diceDisplayed1.setAlpha(0.5);
+                        }
+                        break;
+                    case this.diceResult2:
+                        this.diceResult2 = emptyResult;
+                        if (this.diceDisplayed2) {
+                            this.diceDisplayed2.setAlpha(0.5);
+                        }
+                        break;
+                }
+            }
+        }
+    }
+
+    takeTurnToNext() {
+        switch (this.gamePhaseNow) {
+            case 'redPlayer':
+                this.gamePhaseNow = 'yellowPlayer';
+                break
+            case 'yellowPlayer':
+                this.gamePhaseNow = 'bluePlayer';
+                break
+            case 'bluePlayer':
+                this.gamePhaseNow = 'greenPlayer';
+                break
+            case 'greenPlayer':
+                this.gamePhaseNow = 'redPlayer';
+                break
+        }
     }
 }
 

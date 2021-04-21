@@ -1,5 +1,5 @@
 let config = {
-    width: 1920, 
+    width: 1920,
     height: 1080,
     mode: Phaser.Scale.FIT,
     parent: 'phaser-example',
@@ -9,10 +9,12 @@ let config = {
     physics: {
         default: 'arcade',
         debug: true,
-        gravity: {y: 0}
+        gravity: { y: 0 }
     },
     scene: [ActionScene],
     disableContextMenu: true
 };
 
 let game = new Phaser.Game(config);
+
+
