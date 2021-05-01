@@ -57,6 +57,10 @@ class ActionScene extends Phaser.Scene {
     yellowFigures = [];
     blueFigures = [];
     greenFigures = [];
+    enemiesPositions = [];
+    alliesPositions = [];
+    possibleEndPositions = [];
+    victimsPositions = [];
     diceDisplayed1;
     diceDisplayed2;
     diceThrow;
@@ -65,6 +69,9 @@ class ActionScene extends Phaser.Scene {
     gameTurns = ["redPlayer", "yellowPlayer", "bluePlayer", "greenPlayer",];
     gamePhases = ['gameStart', 'diceThrow', 'doTurn', 'gameOver'];
     gamePhaseNow = this.gameTurns[0];
+    gamePhaseNowDisplayStatus;
+    punishButton;
+    punishMode = false;
     startTiles = [
         {
             name: 'p0',
@@ -73,8 +80,8 @@ class ActionScene extends Phaser.Scene {
         },
         {
             name: 'p1',
-            tileX: 13,
-            tileY: 11
+            tileX: 20,
+            tileY: 7
         },
         {
             name: 'p2',
@@ -151,7 +158,11 @@ class ActionScene extends Phaser.Scene {
         { number: 59, x: 13, y: 13, anim: 'samuraiWalkUp', toiletX: 14, toiletY: 13, toiletIn: 'samuraiWalkRight', toiletOut: 'samuraiWalkLeft' },
         { number: 60, x: 13, y: 12, anim: 'samuraiWalkUp' },
         { number: 61, x: 13, y: 11, anim: 'samuraiWalkUp' },
-        { number: 62, x: 13, y: 10, anim: 'samuraiWalkUp' }
+        { number: 62, x: 13, y: 10, anim: 'samuraiWalkUp' },
+        { number: 56, x: 13, y: 16, startTile: true },
+        { number: 14, x: 20, y: 7, startTile: true },
+        { number: 28, x: 11, y: 0, startTile: true },
+        { number: 42, x: 4, y: 9, startTile: true }
     ];
 
     constructor() {
@@ -195,6 +206,20 @@ class ActionScene extends Phaser.Scene {
         this.diceThrow = this.physics.add.sprite(100, 100, 'diceRoll', 'diceRolling73.png');
         this.diceThrow.setInteractive();
         this.diceThrow.on('pointerdown', this.doRandomThrow, this);
+
+        this.gamePhaseNowDisplayStatus = this.add.text(100, 1000, 'Red\'s Turn', { fontSize: 40 });
+        this.punishButton = this.physics.add.sprite(100, 300, 'UI', 'punishButton.png');
+        this.punishButton.setInteractive();
+        this.punishButton.setScale(0.5);
+        this.punishButton.on('pointerdown', () => {
+            if (this.punishMode) {
+                this.punishButton.setTexture('UI', 'punishButton.png');
+                this.punishMode = false;
+            } else {
+                this.punishButton.setTexture('UI', 'punishButtonInvert.png');
+                this.punishMode = true;
+            }
+        }, this);
     }
 
     update() {
@@ -209,46 +234,12 @@ class ActionScene extends Phaser.Scene {
 
         this.floorMapLayer.forEachTile((tile) => { tile.setAlpha(1) });
 
+
         this.redFigures.map(this.samuraiMapCallback, this);
         this.yellowFigures.map(this.samuraiMapCallback, this);
         this.blueFigures.map(this.samuraiMapCallback, this);
         this.greenFigures.map(this.samuraiMapCallback, this);
         // this.hoverCurrentTile();
-    }
-
-    crystalDecreaser(color) {
-        switch (color) {
-            case 'redPlayer':
-                this.redChipsOut--;
-                this.redCrystalLives.setText("x" + this.redChipsOut);
-                break;
-            case 'yellowPlayer':
-                this.yellowChipsOut--;
-                this.yellowCrystalLives.setText("x" + this.yellowChipsOut);
-                break;
-            case 'bluePlayer':
-                this.blueChipsOut--;
-                this.blueCrystalLives.setText("x" + this.blueChipsOut);
-                break;
-            case 'greenPlayer':
-                this.greenChipsOut--;
-                this.greenCrystalLives.setText("x" + this.greenChipsOut);
-                break;
-        }
-    }
-
-    createNewSamurai(array, chipsCounter, color) {
-        if (chipsCounter === 0) {
-        } else {
-            this.crystalDecreaser(color);
-        }
-        for (let i = 0; i < array.length; i++) {
-            if (array[i].displayList === null) {
-                array[i].addToDisplayList();
-                array[i].anims.play('samuraiStanding');
-                break;
-            }
-        }
     }
 
     createTileMap() {
@@ -257,39 +248,6 @@ class ActionScene extends Phaser.Scene {
         this.floorMapLayer = this.floorMap.createLayer('Ground', this.tileset);
 
     }
-
-    createSamuraiAtStartGamePhase() {
-        for (let i = 0; i < this.playersCount; i++) {
-            for (let k = 0; k < 5; k++) {
-                let samurai = this.physics.add.sprite(this.startTiles[i].tileX * 64 + 28, this.startTiles[i].tileY * 64 + 16, 'samurai', 'samuraiStanding8.png');
-                samurai.setTint(this.playersTintColors[i].color);
-                samurai.colorId = this.playersTintColors[i].color;
-                samurai.teamId = this.players[i].name;
-                samurai.isSamurai = true;
-                samurai.isChosen = false;
-                samurai.removeFromDisplayList();
-                switch (i) {
-                    case 0:
-                        samurai.id = "r" + k;
-                        this.redFigures.push(samurai);
-                        break;
-                    case 1:
-                        samurai.id = "y" + k;
-                        this.yellowFigures.push(samurai);
-                        break;
-                    case 2:
-                        samurai.id = "b" + k;
-                        this.blueFigures.push(samurai);
-                        break;
-                    case 3:
-                        samurai.id = "g" + k;
-                        this.greenFigures.push(samurai);
-                        break;
-                }
-            }
-        }
-    }
-
 
     createAnimations() {
         this.anims.create({
@@ -351,6 +309,53 @@ class ActionScene extends Phaser.Scene {
         })
     }
 
+    createSamuraiAtStartGamePhase() {
+        for (let i = 0; i < this.playersCount; i++) {
+            for (let k = 0; k < 5; k++) {
+                let samurai = this.physics.add.sprite(this.startTiles[i].tileX * 64 + 28, this.startTiles[i].tileY * 64 + 16, 'samurai', 'samuraiStanding8.png');
+                samurai.setTint(this.playersTintColors[i].color);
+                samurai.colorId = this.playersTintColors[i].color;
+                samurai.teamId = this.players[i].name;
+                samurai.isSamurai = true;
+                samurai.isChosen = false;
+                samurai.isGuilty = false;
+                samurai.removeFromDisplayList();
+                switch (i) {
+                    case 0:
+                        samurai.id = "r" + k;
+                        this.redFigures.push(samurai);
+                        break;
+                    case 1:
+                        samurai.id = "y" + k;
+                        this.yellowFigures.push(samurai);
+                        break;
+                    case 2:
+                        samurai.id = "b" + k;
+                        this.blueFigures.push(samurai);
+                        break;
+                    case 3:
+                        samurai.id = "g" + k;
+                        this.greenFigures.push(samurai);
+                        break;
+                }
+            }
+        }
+    }
+
+    createNewSamurai(array, chipsCounter, color) {
+        if (chipsCounter === 0) {
+        } else {
+            this.crystalDecreaser(color);
+        }
+        for (let i = 0; i < array.length; i++) {
+            if (array[i].displayList === null) {
+                array[i].addToDisplayList();
+                array[i].anims.play('samuraiStanding');
+                break;
+            }
+        }
+    }
+
     samuraiMapCallback(samurai) {
         samurai.setTint(samurai.colorId);
         this.pointer.leftButtonDown();
@@ -358,7 +363,17 @@ class ActionScene extends Phaser.Scene {
         let isPointerOverSamurai = this.pointerTileX === Phaser.Math.FloorTo(samurai.x / 64) && this.pointerTileY === Phaser.Math.FloorTo(samurai.y / 64);
         if (isPointerOverSamurai) {
             samurai.setTint(0xffffff);
-            if (samurai.teamId === this.gamePhaseNow && !(samurai.displayList === null)) {
+            if (this.punishMode) {
+                if (this.pointer.isDown) {
+                    console.log(samurai);
+                    if (samurai.isGuilty && !(samurai.displayList === null)) {
+                        this.punishChip(samurai);
+                    }
+                    this.punishMode = false;
+                    this.punishButton.setTexture('UI', 'punishButton.png');
+                }
+            }
+            if (samurai.teamId === this.gamePhaseNow && !(samurai.displayList === null) && !this.punishMode) {
                 if (this.pointer.isDown) {
                     samurai.isChosen = true;
                     samurai.setAlpha(0.3);
@@ -379,26 +394,15 @@ class ActionScene extends Phaser.Scene {
         }
     }
 
-    hoverCurrentTile() {
-        if (this.currentTile) {
-            if (this.pointerTileX === this.currentTile.x && this.pointerTileY === this.currentTile.y) {
-                this.currentTile.setAlpha(0.5);
-            }
-        }
-    }
 
     doStartPath(target) {
         if (target.isChosen) {
 
             if (this.pointer.rightButtonDown()) {
                 if (this.currentTile) {
-                    console.log(this.yellowFigures);
                     this.endTile = this.currentTile;
                     this.endTileNumber = this.endTile.properties.number;
                     this.checkMoveDistance(target);
-                    if (this.diceResult1 === 0 && this.diceResult2 === 0) {
-                        this.takeTurnToNext();
-                    }
                     target.isChosen = false;
                 }
             }
@@ -406,99 +410,108 @@ class ActionScene extends Phaser.Scene {
         }
     }
 
-    tweenMaker(tweenTarget, endTile, newLapCheck) {
-        let timeline = this.tweens.createTimeline();
-        let durationMultiple = newLapCheck - this.startTileNumber;
-        this.slashChipCheck(endTile);
-        for (let i = this.startTileNumber + 1; i <= newLapCheck; i++) {
-            timeline.add({
-                targets: tweenTarget,
-                x: this.tilesetArray[i].x * 64 + 28,
-                y: this.tilesetArray[i].y * 64 + 16,
-                duration: 200,
-                totalDuration: durationMultiple,
-                onStart: () => { tweenTarget.anims.play(this.tilesetArray[i - 1].anim) },
-                onComplete: () => {
-                    if (i === newLapCheck) {
-                        tweenTarget.anims.play('samuraiStanding');
-                    } else {
-                        tweenTarget.anims.play(this.tilesetArray[i].anim);
+    checkMoveDistance(target) {
+        let moveDistance = this.endTileNumber - this.startTileNumber;
+        let emptyResult;
+        let newLapCheck = this.endTileNumber + 56;
+        if (this.diceResult1 === this.diceResult2) {
+            emptyResult = -1;
+        } else {
+            emptyResult = 0;
+        }
+        if (this.startTile.properties.jumper && (this.diceResult1 === 1 || this.diceResult2 === 1)) {
+            this.moveFromJumperWith1(target, emptyResult, newLapCheck);
+        }
+        else if (this.startTile.properties.jumper && (this.diceResult1 === 2 || this.diceResult2 === 2)) {
+            this.moveFromJumperWith2(target, emptyResult, newLapCheck);
+        } else {
+            if (moveDistance === this.diceResult1 || moveDistance === this.diceResult2) {
+                this.tweenMaker(target, this.endTile, this.endTileNumber);
+                if (target.isChosen) {
+                    switch (moveDistance) {
+                        case this.diceResult1:
+                            this.diceResult1 = emptyResult;
+                            if (this.diceDisplayed1) {
+                                this.diceDisplayed1.setAlpha(0.5);
+                            }
+                            break;
+                        case this.diceResult2:
+                            this.diceResult2 = emptyResult;
+                            if (this.diceDisplayed2) {
+                                this.diceDisplayed2.setAlpha(0.5);
+                            }
+                            break;
                     }
                 }
-            });
+
+            }
+            if (this.startTileNumber > 50 && (this.endTileNumber < 7 && this.endTileNumber !== 0)) {
+                let newLapCheck = this.endTileNumber + 56;
+                if (newLapCheck - this.startTileNumber === this.diceResult1 || newLapCheck - this.startTileNumber === this.diceResult2) {
+                    this.tweenMaker(target, this.endTile, newLapCheck);
+                    moveDistance = newLapCheck - this.startTileNumber;
+                    if (target.isChosen) {
+                        switch (moveDistance) {
+                            case this.diceResult1:
+                                this.diceResult1 = emptyResult;
+                                if (this.diceDisplayed1) {
+                                    this.diceDisplayed1.setAlpha(0.5);
+                                }
+                                break;
+                            case this.diceResult2:
+                                this.diceResult2 = emptyResult;
+                                if (this.diceDisplayed2) {
+                                    this.diceDisplayed2.setAlpha(0.5);
+                                }
+                                break;
+                        }
+                    }
+                }
+            }
         }
-        if (endTile.properties.toilet) {
-            timeline.add({
-                targets: tweenTarget,
-                x: this.tilesetArray[this.endTileNumber].toiletX * 64 + 28,
-                y: this.tilesetArray[this.endTileNumber].toiletY * 64 + 16,
-                duration: 100,
-                onStart: () => { tweenTarget.anims.play(this.tilesetArray[this.endTileNumber].toiletIn) },
-                onComplete: () => { tweenTarget.anims.play('samuraiStanding') }
-            });
+        if (this.diceResult1 === 0 && this.diceResult2 === 0) {
+            this.takeTurnToNext();
         }
-        timeline.play();
     }
 
-    doRandomThrow() {
-        if (this.diceDisplayed2 === undefined && this.diceDisplayed1 === undefined) {
-            this.diceResult1 = Phaser.Math.Between(1, 6);
-            this.diceResult2 = Phaser.Math.Between(1, 6);
-            this.diceThrow.anims.play('diceRollThrow');
-            this.displayDiceResult();
-        } else {
-            this.diceDisplayed2.destroy();
-            this.diceDisplayed1.destroy();
-            this.diceResult1 = Phaser.Math.Between(1, 6);
-            this.diceResult2 = Phaser.Math.Between(1, 6);
-            this.diceThrow.anims.play('diceRollThrow');
-            this.displayDiceResult();
+    tweenMaker(tweenTarget, endTile, newLapCheck) {
+        this.AllCaseChipCheck(endTile, newLapCheck, tweenTarget);
+        if (tweenTarget.isChosen) {
+            let timeline = this.tweens.createTimeline();
+            let durationMultiple = newLapCheck - this.startTileNumber;
+            for (let i = this.startTileNumber + 1; i <= newLapCheck; i++) {
+                timeline.add({
+                    targets: tweenTarget,
+                    x: this.tilesetArray[i].x * 64 + 28,
+                    y: this.tilesetArray[i].y * 64 + 16,
+                    duration: 200,
+                    totalDuration: durationMultiple,
+                    onStart: () => { tweenTarget.anims.play(this.tilesetArray[i - 1].anim) },
+                    onComplete: () => {
+                        if (i === newLapCheck) {
+                            tweenTarget.anims.play('samuraiStanding');
+                        } else {
+                            tweenTarget.anims.play(this.tilesetArray[i].anim);
+                        }
+                    }
+                });
+            }
+            if (endTile.properties.toilet) {
+                timeline.add({
+                    targets: tweenTarget,
+                    x: this.tilesetArray[this.endTileNumber].toiletX * 64 + 28,
+                    y: this.tilesetArray[this.endTileNumber].toiletY * 64 + 16,
+                    duration: 100,
+                    onStart: () => { tweenTarget.anims.play(this.tilesetArray[this.endTileNumber].toiletIn) },
+                    onComplete: () => { tweenTarget.anims.play('samuraiStanding') }
+                });
+            }
+            timeline.play();
         }
+
     }
 
-    displayDiceResult() {
 
-        switch (this.diceResult1) {
-            case 1:
-                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals1.png');
-                break;
-            case 2:
-                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals2.png');
-                break;
-            case 3:
-                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals3.png');
-                break;
-            case 4:
-                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals4.png');
-                break;
-            case 5:
-                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals5.png');
-                break;
-            case 6:
-                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals6.png');
-                break;
-        }
-        switch (this.diceResult2) {
-            case 1:
-                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals1.png');
-                break;
-            case 2:
-                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals2.png');
-                break;
-            case 3:
-                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals3.png');
-                break;
-            case 4:
-                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals4.png');
-                break;
-            case 5:
-                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals5.png');
-                break;
-            case 6:
-                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals6.png');
-                break;
-        }
-    }
 
     jumperDiceReset(emptyResult, howMuchOnDice) {
         if (this.diceResult1 === howMuchOnDice) {
@@ -512,8 +525,8 @@ class ActionScene extends Phaser.Scene {
         }
     }
 
-    moveFromJumperWith1(tweenTarget, emptyResult) {
-        this.slashChipCheck(this.endTile);
+    moveFromJumperWith1(tweenTarget, emptyResult, newLapCheck) {
+        this.AllCaseChipCheck(this.endTile, newLapCheck, tweenTarget);
         switch (this.startTileNumber) {
             case 7:
                 if (this.startTileNumber === 7 && this.endTileNumber === 21) {
@@ -566,8 +579,8 @@ class ActionScene extends Phaser.Scene {
         }
     }
 
-    moveFromJumperWith2(tweenTarget, emptyResult) {
-        this.slashChipCheck(this.endTile);
+    moveFromJumperWith2(tweenTarget, emptyResult, newLapCheck) {
+        this.AllCaseChipCheck(this.endTile, newLapCheck, tweenTarget);
         switch (this.startTileNumber) {
             case 7:
                 if (this.startTileNumber === 7 && this.endTileNumber === 35) {
@@ -632,102 +645,89 @@ class ActionScene extends Phaser.Scene {
         }
     }
 
-    checkMoveDistance(target) {
-        let moveDistance = this.endTileNumber - this.startTileNumber;
-        let emptyResult;
-        if (this.diceResult1 === this.diceResult2) {
-            emptyResult = -1;
-        } else {
-            emptyResult = 0;
-        }
-        if (this.startTile.properties.jumper && (this.diceResult1 === 1 || this.diceResult2 === 1)) {
-            this.moveFromJumperWith1(target, emptyResult);
-        }
-        else if (this.startTile.properties.jumper && (this.diceResult1 === 2 || this.diceResult2 === 2)) {
-            this.moveFromJumperWith2(target, emptyResult);
-        } else {
-            if (moveDistance === this.diceResult1 || moveDistance === this.diceResult2) {
-                this.tweenMaker(target, this.endTile, this.endTileNumber);
-                switch (moveDistance) {
-                    case this.diceResult1:
-                        this.diceResult1 = emptyResult;
-                        if (this.diceDisplayed1) {
-                            this.diceDisplayed1.setAlpha(0.5);
-                        }
-                        break;
-                    case this.diceResult2:
-                        this.diceResult2 = emptyResult;
-                        if (this.diceDisplayed2) {
-                            this.diceDisplayed2.setAlpha(0.5);
-                        }
-                        break;
-                }
-            }
-            if (this.startTileNumber > 50 && (this.endTileNumber < 7 && this.endTileNumber !== 0)) {
-                let newLapCheck = this.endTileNumber + 56;
-                if (newLapCheck - this.startTileNumber === this.diceResult1 || newLapCheck - this.startTileNumber === this.diceResult2) {
-                    this.tweenMaker(target, this.endTile, newLapCheck);
-                    moveDistance = newLapCheck - this.startTileNumber;
-                    switch (moveDistance) {
-                        case this.diceResult1:
-                            this.diceResult1 = emptyResult;
-                            if (this.diceDisplayed1) {
-                                this.diceDisplayed1.setAlpha(0.5);
-                            }
-                            break;
-                        case this.diceResult2:
-                            this.diceResult2 = emptyResult;
-                            if (this.diceDisplayed2) {
-                                this.diceDisplayed2.setAlpha(0.5);
-                            }
-                            break;
-                    }
-                }
-            }
-        }
 
-    }
 
-    takeTurnToNext() {
-        switch (this.gamePhaseNow) {
-            case 'redPlayer':
-                this.gamePhaseNow = 'yellowPlayer';
-                break
-            case 'yellowPlayer':
-                this.gamePhaseNow = 'bluePlayer';
-                break
-            case 'bluePlayer':
-                this.gamePhaseNow = 'greenPlayer';
-                break
-            case 'greenPlayer':
-                this.gamePhaseNow = 'redPlayer';
-                break
-        }
-    }
 
-    slashChipCheck(endTile) {
+
+    AllCaseChipCheck(endTile, newLapCheck, tweenTarget) {
         switch (this.gamePhaseNow) {
             case 'redPlayer':
                 this.slashChip(this.yellowFigures, endTile, 1);
                 this.slashChip(this.blueFigures, endTile, 2);
                 this.slashChip(this.greenFigures, endTile, 3);
+
+                this.checkEnemyOnTheWay(this.yellowFigures, newLapCheck, tweenTarget);
+                this.checkEnemyOnTheWay(this.blueFigures, newLapCheck, tweenTarget);
+                this.checkEnemyOnTheWay(this.greenFigures, newLapCheck, tweenTarget);
+
+                this.checkAllyAtTheWayEnd(this.redFigures, endTile, tweenTarget);
                 break;
             case 'yellowPlayer':
                 this.slashChip(this.redFigures, endTile, 0);
                 this.slashChip(this.blueFigures, endTile, 2);
                 this.slashChip(this.greenFigures, endTile, 3);
+
+                this.checkEnemyOnTheWay(this.redFigures, newLapCheck, tweenTarget);
+                this.checkEnemyOnTheWay(this.blueFigures, newLapCheck, tweenTarget);
+                this.checkEnemyOnTheWay(this.greenFigures, newLapCheck, tweenTarget);
+
+                this.checkAllyAtTheWayEnd(this.yellowFigures, endTile, tweenTarget);
                 break;
             case 'bluePlayer':
                 this.slashChip(this.redFigures, endTile, 0);
                 this.slashChip(this.yellowFigures, endTile, 1);
                 this.slashChip(this.greenFigures, endTile, 3);
+
+                this.checkEnemyOnTheWay(this.redFigures, newLapCheck, tweenTarget);
+                this.checkEnemyOnTheWay(this.yellowFigures, newLapCheck, tweenTarget);
+                this.checkEnemyOnTheWay(this.greenFigures, newLapCheck, tweenTarget);
+
+                this.checkAllyAtTheWayEnd(this.blueFigures, endTile, tweenTarget);
                 break;
             case 'greenPlayer':
                 this.slashChip(this.redFigures, endTile, 0);
                 this.slashChip(this.yellowFigures, endTile, 1);
                 this.slashChip(this.blueFigures, endTile, 2);
+
+                this.checkEnemyOnTheWay(this.redFigures, newLapCheck, tweenTarget);
+                this.checkEnemyOnTheWay(this.yellowFigures, newLapCheck, tweenTarget);
+                this.checkEnemyOnTheWay(this.blueFigures, newLapCheck, tweenTarget);
+
+                this.checkAllyAtTheWayEnd(this.greenFigures, endTile, tweenTarget);
                 break;
         }
+    }
+
+    punishChip(samurai) {
+        let tileIndex;
+        switch (samurai.teamId) {
+            case 'redPlayer':
+                tileIndex = 0;
+                break;
+            case 'yellowPlayer':
+                tileIndex = 1;
+                break;
+            case 'bluePlayer':
+                tileIndex = 2;
+                break;
+            case 'greenPlayer':
+                tileIndex = 3;
+                break;
+        }
+        this.tweens.add({
+            targets: samurai,
+            duration: 1500,
+            t1: 1500,
+            onStart: () => {
+                samurai.anims.play('samuraiDying');
+            },
+            onComplete: () => {
+                samurai.removeFromDisplayList();
+                samurai.x = this.startTiles[tileIndex].tileX * 64 + 28;
+                samurai.y = this.startTiles[tileIndex].tileY * 64 + 16;
+                this.crystalEncreaser(samurai.teamId);
+            }
+        });
     }
 
     slashChip(array, endTile, startTileIndex) {
@@ -737,8 +737,8 @@ class ActionScene extends Phaser.Scene {
                     targets: samurai,
                     duration: 1500,
                     t1: 1500,
-                    onStart: () => { 
-                        samurai.anims.play('samuraiDying'); 
+                    onStart: () => {
+                        samurai.anims.play('samuraiDying');
                     },
                     onComplete: () => {
                         samurai.removeFromDisplayList();
@@ -749,6 +749,269 @@ class ActionScene extends Phaser.Scene {
                 });
             }
         })
+    }
+
+    checkAllyAtTheWayEnd(array, endTile, tweenTarget) {
+        array.map(samurai => {
+            if (Phaser.Math.FloorTo(samurai.x / 64) === endTile.x && Phaser.Math.FloorTo(samurai.y / 64) === endTile.y) {
+                tweenTarget.isChosen = false;
+            }
+        });
+    }
+
+    checkEnemyOnTheWay(array, newLapCheck, tweenTarget) {
+        array.map(samurai => {
+            let isJumper = this.startTile.properties.jumper;
+            if (!isJumper || (isJumper && ((this.diceResult1 !== 1 && this.diceResult1 !== 2) && (this.diceResult2 !== 1 && this.diceResult2 !== 2)))) {
+                for (let i = this.startTileNumber + 1; i < newLapCheck; i++) {
+                    if (Phaser.Math.FloorTo(samurai.x / 64) === this.tilesetArray[i].x && Phaser.Math.FloorTo(samurai.y / 64) === this.tilesetArray[i].y) {
+                        tweenTarget.isChosen = false;
+                    }
+                }
+            }
+        })
+    }
+
+    doRandomThrow() {
+        if (this.diceDisplayed2 === undefined && this.diceDisplayed1 === undefined) {
+            this.diceResult1 = Phaser.Math.Between(1, 6);
+            this.diceResult2 = Phaser.Math.Between(1, 6);
+            this.diceThrow.anims.play('diceRollThrow');
+            this.displayDiceResult();
+        } else {
+            this.diceDisplayed2.destroy();
+            this.diceDisplayed1.destroy();
+            this.diceResult1 = Phaser.Math.Between(1, 6);
+            this.diceResult2 = Phaser.Math.Between(1, 6);
+            this.diceThrow.anims.play('diceRollThrow');
+            this.displayDiceResult();
+            switch (this.gamePhaseNow) {
+                case 'redPlayer':
+                    this.getAllPositionsData(this.redFigures, this.yellowFigures, this.blueFigures, this.greenFigures);
+                    break;
+                case 'yellowPlayer':
+                    this.getAllPositionsData(this.yellowFigures, this.redFigures, this.blueFigures, this.greenFigures);
+                    break;
+                case 'bluePlayer':
+                    this.getAllPositionsData(this.blueFigures, this.redFigures, this.yellowFigures, this.greenFigures);
+                    break;
+                case 'greenPlayer':
+                    this.getAllPositionsData(this.greenFigures, this.redFigures, this.yellowFigures, this.blueFigures);
+                    break;
+            }
+        }
+    }
+
+    getAlliesPositions(allyArray, arrayOut) {
+        allyArray.map(samurai => {
+            if (samurai.displayList !== null) {
+                this.tilesetArray.map(tile => {
+                    if (tile.x === Phaser.Math.FloorTo(samurai.x / 64) && tile.y === Phaser.Math.FloorTo(samurai.y / 64)) {
+                        let samuraiObject = {};
+                        samuraiObject.id = samurai.id;
+                        samuraiObject.position = tile.number;
+                        arrayOut.push(samuraiObject);
+                    }
+                });
+            }
+        });
+    }
+
+    getAlliesPossibleEndPositions(object) {
+        let checkObject = {};
+        let d1 = this.diceResult1;
+        let d2 = this.diceResult2;
+        if (this.diceResult1 < 1) {
+            d1 = 0;
+        }
+        if (this.diceResult2 < 1) {
+            d2 = 0;
+        }
+        let diceSumPlusPosition = object.position + d1 + d2;
+        if (diceSumPlusPosition > 56) {
+            diceSumPlusPosition -= 56;
+        }
+        checkObject.id = object.id;
+        checkObject.d1Check = object.position + this.diceResult1;
+        checkObject.d2Check = object.position + this.diceResult2;
+        checkObject.dSumCheck = diceSumPlusPosition;
+        this.possibleEndPositions.push(checkObject);
+    }
+
+    getAllCurrentEnemiesPosition(enemiesArray, arrayOut) {
+        enemiesArray.map(samurai => {
+            if (samurai.displayList !== null) {
+                this.tilesetArray.map(tile => {
+                    if (tile.x === Phaser.Math.FloorTo(samurai.x / 64) && tile.y === Phaser.Math.FloorTo(samurai.y / 64) && !tile.startTile) {
+                        let currentTileNumber = tile.number;
+                        arrayOut.push(currentTileNumber);
+                    }
+                });
+            }
+        })
+    }
+
+    getVictims() {
+        this.enemiesPositions.map(enemyPos => {
+            this.possibleEndPositions.map(posObject => {
+                if (enemyPos === posObject.d1Check || enemyPos === posObject.d2Check || enemyPos === posObject.dSumCheck) {
+                    let victimObject = {};
+                    victimObject.where = enemyPos;
+                    victimObject.byWho = posObject.id;
+                    this.victimsPositions.push(victimObject);
+                }
+            });
+        })
+    }
+
+    getAllPositionsData(allyArray, enemyArray1, enemyArray2, enemyArray3) {
+        this.alliesPositions = [];
+        this.enemiesPositions = [];
+        this.possibleEndPositions = [];
+        this.victimsPositions = [];
+        allyArray.map(ally => {
+            ally.isGuilty = false;
+        });
+        this.getAlliesPositions(allyArray, this.alliesPositions);
+        this.getAllCurrentEnemiesPosition(enemyArray1, this.enemiesPositions);
+        this.getAllCurrentEnemiesPosition(enemyArray2, this.enemiesPositions);
+        this.getAllCurrentEnemiesPosition(enemyArray3, this.enemiesPositions);
+        this.alliesPositions.map(object => { this.getAlliesPossibleEndPositions(object) });
+        this.getVictims();
+        console.log('allies');
+        console.log(this.alliesPositions);
+        console.log('enemies');
+        console.log(this.enemiesPositions);
+        console.log('possibleEndPositions');
+        console.log(this.possibleEndPositions);
+        if (this.victimsPositions.length > 0) {
+            console.log('VICTIMS');
+            console.log(this.victimsPositions);
+        }
+    }
+
+    checkSetGuilt(allyArray, enemyArray1, enemyArray2, enemyArray3) {
+        let enemiesPositionsAfterTurn = [];
+        this.getAllCurrentEnemiesPosition(enemyArray1, enemiesPositionsAfterTurn);
+        this.getAllCurrentEnemiesPosition(enemyArray2, enemiesPositionsAfterTurn);
+        this.getAllCurrentEnemiesPosition(enemyArray3, enemiesPositionsAfterTurn);
+        this.victimsPositions.map(murder => {
+            if (enemiesPositionsAfterTurn.includes(murder.where)) {
+                allyArray.map(samurai => {
+                    if (samurai.id === murder.byWho) {
+                        samurai.isGuilty = true;
+                        console.log(samurai.id + ' IS GUILTY!');
+                    }
+                })
+            }
+        })
+        // let alliesEndPositions = [];
+        // this.getAlliesPositions(allyArray, alliesEndPositions);
+
+        // alliesEndPositions.map(ally => {
+        //     this.possibleEndPositions.map(posObject => {
+        //         if (posObject.id === ally.id) {
+        //             if (ally.position !== (posObject.d1Check || posObject.d2Check || posObject.dSumCheck)) {
+        //                 allyArray.map(samurai => {
+        //                     if (samurai.id === posObject.id) {
+        //                         samurai.isGuilty = true;
+        //                         console.log(samurai);
+        //                     }
+        //                 });
+        //             }
+        //         }
+        //     })
+        // })
+    }
+
+    displayDiceResult() {
+
+        switch (this.diceResult1) {
+            case 1:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals1.png');
+                break;
+            case 2:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals2.png');
+                break;
+            case 3:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals3.png');
+                break;
+            case 4:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals4.png');
+                break;
+            case 5:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals5.png');
+                break;
+            case 6:
+                this.diceDisplayed1 = this.add.image(1600, 100, 'UI', 'diceEquals6.png');
+                break;
+        }
+        switch (this.diceResult2) {
+            case 1:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals1.png');
+                break;
+            case 2:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals2.png');
+                break;
+            case 3:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals3.png');
+                break;
+            case 4:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals4.png');
+                break;
+            case 5:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals5.png');
+                break;
+            case 6:
+                this.diceDisplayed2 = this.add.image(1800, 100, 'UI', 'diceEquals6.png');
+                break;
+        }
+    }
+
+    takeTurnToNext() {
+        switch (this.gamePhaseNow) {
+            case 'redPlayer':
+                this.checkSetGuilt(this.redFigures, this.yellowFigures, this.blueFigures, this.greenFigures);
+                this.gamePhaseNow = 'yellowPlayer';
+                this.gamePhaseNowDisplayStatus.setText('Yellow\'s Turn');
+                break
+            case 'yellowPlayer':
+                this.checkSetGuilt(this.yellowFigures, this.redFigures, this.blueFigures, this.greenFigures);
+                this.gamePhaseNow = 'bluePlayer';
+                this.gamePhaseNowDisplayStatus.setText('Blue\'s Turn');
+                break
+            case 'bluePlayer':
+                this.checkSetGuilt(this.blueFigures, this.redFigures, this.yellowFigures, this.greenFigures);
+                this.gamePhaseNow = 'greenPlayer';
+                this.gamePhaseNowDisplayStatus.setText('Green\'s Turn');
+                break
+            case 'greenPlayer':
+                this.checkSetGuilt(this.greenFigures, this.redFigures, this.yellowFigures, this.blueFigures);
+                this.gamePhaseNow = 'redPlayer';
+                this.gamePhaseNowDisplayStatus.setText('Red\'s Turn');
+                break
+        }
+    }
+
+    crystalDecreaser(color) {
+        switch (color) {
+            case 'redPlayer':
+                this.redChipsOut--;
+                this.redCrystalLives.setText("x" + this.redChipsOut);
+                break;
+            case 'yellowPlayer':
+                this.yellowChipsOut--;
+                this.yellowCrystalLives.setText("x" + this.yellowChipsOut);
+                break;
+            case 'bluePlayer':
+                this.blueChipsOut--;
+                this.blueCrystalLives.setText("x" + this.blueChipsOut);
+                break;
+            case 'greenPlayer':
+                this.greenChipsOut--;
+                this.greenCrystalLives.setText("x" + this.greenChipsOut);
+                break;
+        }
     }
 
     crystalEncreaser(color) {
@@ -769,6 +1032,14 @@ class ActionScene extends Phaser.Scene {
                 this.greenChipsOut += 1;
                 this.greenCrystalLives.setText("x" + this.greenChipsOut);
                 break;
+        }
+    }
+
+    hoverCurrentTile() {
+        if (this.currentTile) {
+            if (this.pointerTileX === this.currentTile.x && this.pointerTileY === this.currentTile.y) {
+                this.currentTile.setAlpha(0.5);
+            }
         }
     }
 }
