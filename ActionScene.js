@@ -208,6 +208,8 @@ class ActionScene extends Phaser.Scene {
         this.diceThrow.on('pointerdown', this.doRandomThrow, this);
 
         this.gamePhaseNowDisplayStatus = this.add.text(100, 1000, 'Red\'s Turn', { fontSize: 40 });
+        this.gamePhaseNowDisplayStatus.setInteractive();
+        this.gamePhaseNowDisplayStatus.on('pointerdown', this.takeTurnToNext, this);
         this.punishButton = this.physics.add.sprite(100, 300, 'UI', 'punishButton.png');
         this.punishButton.setInteractive();
         this.punishButton.setScale(0.5);
@@ -319,6 +321,8 @@ class ActionScene extends Phaser.Scene {
                 samurai.isSamurai = true;
                 samurai.isChosen = false;
                 samurai.isGuilty = false;
+                samurai.isBlocked = false;
+                samurai.cantDoTurn = false;
                 samurai.removeFromDisplayList();
                 switch (i) {
                     case 0:
@@ -357,15 +361,16 @@ class ActionScene extends Phaser.Scene {
     }
 
     samuraiMapCallback(samurai) {
+        if (samurai.isBlocked) {
+            samurai.isChosen = false;
+        }
         samurai.setTint(samurai.colorId);
         this.pointer.leftButtonDown();
-        samurai.setInteractive();
         let isPointerOverSamurai = this.pointerTileX === Phaser.Math.FloorTo(samurai.x / 64) && this.pointerTileY === Phaser.Math.FloorTo(samurai.y / 64);
         if (isPointerOverSamurai) {
             samurai.setTint(0xffffff);
             if (this.punishMode) {
                 if (this.pointer.isDown) {
-                    console.log(samurai);
                     if (samurai.isGuilty && !(samurai.displayList === null)) {
                         this.punishChip(samurai);
                     }
@@ -375,6 +380,24 @@ class ActionScene extends Phaser.Scene {
             }
             if (samurai.teamId === this.gamePhaseNow && !(samurai.displayList === null) && !this.punishMode) {
                 if (this.pointer.isDown) {
+                    switch (this.gamePhaseNow) {
+                        case 'redPlayer':
+                            this.redFigures.map(s => { s.isChosen = false });
+                            this.checkForTurnRestMode(this.redFigures);
+                            break;
+                        case 'yellowPlayer':
+                            this.yellowFigures.map(s => { s.isChosen = false });
+                            this.checkForTurnRestMode(this.yellowFigures);
+                            break;
+                        case 'bluePlayer':
+                            this.blueFigures.map(s => { s.isChosen = false });
+                            this.checkForTurnRestMode(this.blueFigures);
+                            break;
+                        case 'greenPlayer':
+                            this.greenFigures.map(s => { s.isChosen = false });
+                            this.checkForTurnRestMode(this.greenFigures);
+                            break;
+                    }
                     samurai.isChosen = true;
                     samurai.setAlpha(0.3);
                     if (this.currentTile) {
@@ -475,8 +498,14 @@ class ActionScene extends Phaser.Scene {
     }
 
     tweenMaker(tweenTarget, endTile, newLapCheck) {
+        this.checkToiletEnter(endTile, tweenTarget);
+        this.checkToiletOut(tweenTarget);
         this.AllCaseChipCheck(endTile, newLapCheck, tweenTarget);
         if (tweenTarget.isChosen) {
+            if (this.enemiesPositions.includes(endTile.properties.number)) {
+                tweenTarget.isBlocked = true;
+                tweenTarget.setTintFill(0x000001);
+            }
             let timeline = this.tweens.createTimeline();
             let durationMultiple = newLapCheck - this.startTileNumber;
             for (let i = this.startTileNumber + 1; i <= newLapCheck; i++) {
@@ -733,22 +762,93 @@ class ActionScene extends Phaser.Scene {
     slashChip(array, endTile, startTileIndex) {
         array.map(samurai => {
             if (Phaser.Math.FloorTo(samurai.x / 64) === endTile.x && Phaser.Math.FloorTo(samurai.y / 64) === endTile.y) {
-                this.tweens.add({
-                    targets: samurai,
-                    duration: 1500,
-                    t1: 1500,
-                    onStart: () => {
-                        samurai.anims.play('samuraiDying');
-                    },
-                    onComplete: () => {
-                        samurai.removeFromDisplayList();
-                        samurai.x = this.startTiles[startTileIndex].tileX * 64 + 28;
-                        samurai.y = this.startTiles[startTileIndex].tileY * 64 + 16;
-                        this.crystalEncreaser(samurai.teamId);
-                    }
-                });
+                if (endTile.properties.toilet) {
+
+                } else {
+                    this.tweens.add({
+                        targets: samurai,
+                        duration: 1500,
+                        t1: 1500,
+                        onStart: () => {
+                            samurai.anims.play('samuraiDying');
+                        },
+                        onComplete: () => {
+                            samurai.removeFromDisplayList();
+                            samurai.x = this.startTiles[startTileIndex].tileX * 64 + 28;
+                            samurai.y = this.startTiles[startTileIndex].tileY * 64 + 16;
+                            this.crystalEncreaser(samurai.teamId);
+                        }
+                    });
+                }
             }
         })
+    }
+
+    checkForTurnRestMode(allyArray) {
+        allyArray.map(ally => {
+            let d1 = this.diceResult1;
+            if (this.diceResult1 < 1) {
+                d1 = 0;
+            }
+            let d2 = this.diceResult2;
+            if (this.diceResult2 < 1) {
+                d2 = 0;
+            }
+            if (ally.displayList !== null) {
+                if (ally.isblocked) {
+                    ally.cantDoTurn = true;
+                    console.log(ally.id + ' cant do turn because of ISBLOCKED=TRUE');
+                } else {
+                    let positionNumbersArray = [];
+                    this.alliesPositions.map(obj => { positionNumbersArray.push(obj.position) });
+                    this.alliesPositions.map(obj => {
+                        if (ally.id === obj.id) {
+                            console.log(positionNumbersArray)
+                            if ((positionNumbersArray.includes(obj.position + d1) && d1 !== 0) || (positionNumbersArray.includes(obj.position + d2) && d2 !== 0)) {
+                                ally.cantDoTurn = true;
+                                console.log(ally.id + ' cant do turn because of ALLY_ON_THE_WAYEND');
+                            }
+                            let checkTile1 = obj.position;
+                            let checkTile2 = obj.position;
+                            let distance1 = obj.position + d1;
+                            let distance2 = obj.position + d2;
+                            if (d1 !== 0) {
+                                for (let i = obj.position; i < distance1 - 1; i++) {
+                                    checkTile1++;
+                                    if (this.enemiesPositions.includes(checkTile1)) {
+                                        ally.cantDoTurn = true;
+                                        console.log(ally.id + ' cant do turn because of ENEMY_ON_THE_WAY');
+                                    }
+                                }
+                            }
+                            if (d2 !== 0) {
+                                for (let i = obj.position; i < distance2 - 1; i++) {
+                                    checkTile2++;
+                                    if (this.enemiesPositions.includes(checkTile2)) {
+                                        ally.cantDoTurn = true;
+                                        console.log(ally.id + ' cant do turn because of ENEMY_ON_THE_WAY');
+                                    }
+                                }
+                            }
+                        }
+                    });
+
+                    let alliesXY = [];
+                    this.getPositions(allyArray, alliesXY);
+                }
+            }
+        });
+        let checkMovePossibilityArray = [];
+        allyArray.map(ally => {
+            if (ally.displayList !== null) {
+                console.log(ally.id + ' turn=' + ally.cantDoTurn);
+                checkMovePossibilityArray.push(ally);
+            }
+        });
+        if (checkMovePossibilityArray.every(el => el.cantDoTurn === true)) {
+            console.log('НЕТ ХОДОВ!!!');
+        }
+        allyArray.map(s => { s.cantDoTurn = false });
     }
 
     checkAllyAtTheWayEnd(array, endTile, tweenTarget) {
@@ -772,12 +872,55 @@ class ActionScene extends Phaser.Scene {
         })
     }
 
+    checkToiletEnter(endTile, tweenTarget) {
+        if (endTile.properties.toilet) {
+            this.checkAllyAtTheWayEnd(this.redFigures, endTile, tweenTarget);
+            this.checkAllyAtTheWayEnd(this.yellowFigures, endTile, tweenTarget);
+            this.checkAllyAtTheWayEnd(this.blueFigures, endTile, tweenTarget);
+            this.checkAllyAtTheWayEnd(this.greenFigures, endTile, tweenTarget);
+        }
+    }
+
+    getPositions(array, arrayOut) {
+        array.map(samurai => {
+            let samuraiObject = {};
+            samuraiObject.x = Phaser.Math.FloorTo(samurai.x / 64);
+            samuraiObject.y = Phaser.Math.FloorTo(samurai.y / 64);
+            arrayOut.push(samuraiObject);
+        });
+    };
+
+    checkToiletOut(tweenTarget) {
+        this.tilesetArray.map(tile => {
+            if (tile.toiletX === Phaser.Math.FloorTo(tweenTarget.x / 64) && tile.toiletY === Phaser.Math.FloorTo(tweenTarget.y / 64)) {
+                let allPositions = [];
+                this.getPositions(this.redFigures, allPositions);
+                this.getPositions(this.yellowFigures, allPositions);
+                this.getPositions(this.blueFigures, allPositions);
+                this.getPositions(this.greenFigures, allPositions);
+                allPositions.map(posObject => {
+                    if (posObject.x === tile.x && posObject.y === tile.y) {
+                        tweenTarget.isChosen = false;
+                    }
+                })
+            }
+        })
+    }
+
+    allFiguresBlockedClear() {
+        this.redFigures.map(samurai => { samurai.isBlocked = false; })
+        this.yellowFigures.map(samurai => { samurai.isBlocked = false; })
+        this.blueFigures.map(samurai => { samurai.isBlocked = false; })
+        this.greenFigures.map(samurai => { samurai.isBlocked = false; })
+    }
+
     doRandomThrow() {
         if (this.diceDisplayed2 === undefined && this.diceDisplayed1 === undefined) {
             this.diceResult1 = Phaser.Math.Between(1, 6);
             this.diceResult2 = Phaser.Math.Between(1, 6);
             this.diceThrow.anims.play('diceRollThrow');
             this.displayDiceResult();
+            this.allFiguresBlockedClear();
         } else {
             this.diceDisplayed2.destroy();
             this.diceDisplayed1.destroy();
@@ -785,6 +928,7 @@ class ActionScene extends Phaser.Scene {
             this.diceResult2 = Phaser.Math.Between(1, 6);
             this.diceThrow.anims.play('diceRollThrow');
             this.displayDiceResult();
+            this.allFiguresBlockedClear();
             switch (this.gamePhaseNow) {
                 case 'redPlayer':
                     this.getAllPositionsData(this.redFigures, this.yellowFigures, this.blueFigures, this.greenFigures);
@@ -806,10 +950,19 @@ class ActionScene extends Phaser.Scene {
         allyArray.map(samurai => {
             if (samurai.displayList !== null) {
                 this.tilesetArray.map(tile => {
-                    if (tile.x === Phaser.Math.FloorTo(samurai.x / 64) && tile.y === Phaser.Math.FloorTo(samurai.y / 64)) {
+                    let checkUsualTiles = tile.x === Phaser.Math.FloorTo(samurai.x / 64) && tile.y === Phaser.Math.FloorTo(samurai.y / 64);
+                    let checkToilets = tile.toiletX === Phaser.Math.FloorTo(samurai.x / 64) && tile.toiletY === Phaser.Math.FloorTo(samurai.y / 64);
+                    if (checkUsualTiles) {
                         let samuraiObject = {};
                         samuraiObject.id = samurai.id;
                         samuraiObject.position = tile.number;
+                        arrayOut.push(samuraiObject);
+                    }
+                    if (checkToilets) {
+                        let samuraiObject = {};
+                        samuraiObject.id = samurai.id;
+                        samuraiObject.position = tile.number;
+                        samuraiObject.inToilet = true;
                         arrayOut.push(samuraiObject);
                     }
                 });
@@ -878,16 +1031,16 @@ class ActionScene extends Phaser.Scene {
         this.getAllCurrentEnemiesPosition(enemyArray3, this.enemiesPositions);
         this.alliesPositions.map(object => { this.getAlliesPossibleEndPositions(object) });
         this.getVictims();
-        console.log('allies');
-        console.log(this.alliesPositions);
-        console.log('enemies');
-        console.log(this.enemiesPositions);
-        console.log('possibleEndPositions');
-        console.log(this.possibleEndPositions);
-        if (this.victimsPositions.length > 0) {
-            console.log('VICTIMS');
-            console.log(this.victimsPositions);
-        }
+        // console.log('allies');
+        // console.log(this.alliesPositions);
+        // console.log('enemies');
+        // console.log(this.enemiesPositions);
+        // console.log('possibleEndPositions');
+        // console.log(this.possibleEndPositions);
+        // if (this.victimsPositions.length > 0) {
+        //     console.log('VICTIMS');
+        //     console.log(this.victimsPositions);
+        // }
     }
 
     checkSetGuilt(allyArray, enemyArray1, enemyArray2, enemyArray3) {
@@ -900,28 +1053,11 @@ class ActionScene extends Phaser.Scene {
                 allyArray.map(samurai => {
                     if (samurai.id === murder.byWho) {
                         samurai.isGuilty = true;
-                        console.log(samurai.id + ' IS GUILTY!');
+                        // console.log(samurai.id + ' IS GUILTY!');
                     }
                 })
             }
         })
-        // let alliesEndPositions = [];
-        // this.getAlliesPositions(allyArray, alliesEndPositions);
-
-        // alliesEndPositions.map(ally => {
-        //     this.possibleEndPositions.map(posObject => {
-        //         if (posObject.id === ally.id) {
-        //             if (ally.position !== (posObject.d1Check || posObject.d2Check || posObject.dSumCheck)) {
-        //                 allyArray.map(samurai => {
-        //                     if (samurai.id === posObject.id) {
-        //                         samurai.isGuilty = true;
-        //                         console.log(samurai);
-        //                     }
-        //                 });
-        //             }
-        //         }
-        //     })
-        // })
     }
 
     displayDiceResult() {
